@@ -13,7 +13,7 @@
       --emas:#FFD700;
       --putih:#fff;
       --hitam:#1a1a1a;
-      }
+    }
     *{box-sizing:border-box;margin:0;padding:0;scroll-behavior:smooth;}
     body{font-family:Poppins,sans-serif;background:linear-gradient(180deg,var(--hitam),#330000);color:var(--putih);}
     header{position:sticky;top:0;background:rgba(139,0,0,0.9);backdrop-filter:blur(6px);padding:1rem 2rem;display:flex;align-items:center;justify-content:space-between;z-index:10;box-shadow:0 2px 10px rgba(0,0,0,0.4)}
@@ -27,27 +27,37 @@
     .hero-text p{max-width:550px;line-height:1.7;color:#fce8e8;}
     .hero-img{flex:1;min-width:300px;text-align:center;}
     .hero-img img{width:100%;max-width:400px;border-radius:12px;box-shadow:0 0 20px rgba(255,215,0,0.5);animation:float 4s ease-in-out infinite;}
+
     section{padding:3rem 2rem;}
     h2.section-title{text-align:center;color:var(--emas);margin-bottom:1rem;font-size:1.8rem;}
     p.section-sub{text-align:center;margin-bottom:2rem;color:#f8dcdc;}
+
     .profil,.tarian,.galeri,.kontak{max-width:1100px;margin:auto;}
+
     .profil-content{display:flex;flex-wrap:wrap;align-items:center;gap:2rem;}
     .profil-content img{width:100%;max-width:400px;border-radius:12px;box-shadow:0 0 15px rgba(255,255,255,0.2)}
     .profil-content div{flex:1;}
+
     .tarian-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.5rem;}
     .tarian-card{background:rgba(255,255,255,0.05);border-radius:12px;padding:1rem;text-align:center;transition:transform 0.3s;}
     .tarian-card:hover{transform:scale(1.05);}
     .tarian-card img{width:100%;border-radius:10px;margin-bottom:.5rem;}
+
     .galeri-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1rem;}
     .galeri-grid img{width:100%;border-radius:10px;transition:transform 0.3s,box-shadow 0.3s;}
     .galeri-grid img:hover{transform:scale(1.05);box-shadow:0 0 15px var(--emas);}
+
     .kontak-form{display:flex;flex-direction:column;gap:1rem;max-width:600px;margin:auto;}
     input,textarea{padding:.8rem;border:none;border-radius:8px;background:rgba(255,255,255,0.1);color:var(--putih);}
     button{padding:.8rem 1.5rem;background:var(--emas);color:var(--hitam);border:none;border-radius:8px;font-weight:600;cursor:pointer;transition:0.3s;}
     button:hover{background:var(--merah-cerah);color:var(--putih);}
+
     footer{text-align:center;padding:1.5rem;background:rgba(0,0,0,0.8);color:#ddd;margin-top:2rem;font-size:.9rem;}
+
     @keyframes fadeIn{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:translateY(0);}}
     @keyframes float{0%{transform:translateY(0);}50%{transform:translateY(-10px);}100%{transform:translateY(0);}}
+
+    /* 🎭 ANIMASI TAMBAHAN UNTUK GAMBAR */
     @keyframes fadeInUp {
       from {opacity: 0; transform: translateY(30px);}
       to {opacity: 1; transform: translateY(0);}
@@ -113,6 +123,9 @@
     font-weight: bold;
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
 }
+
+/* Logic Pergeseran Slide (INTI) */
+/* Ketika slide-2 aktif, geser kontainer ke kiri 33.33% */
 #slide-2:checked ~ .carousel-container {
     transform: translateX(-33.33%);
 }
@@ -149,7 +162,8 @@
     background-color: #fff;
     border: 2px solid #333;
 }
-</style>
+
+  </style>
 </head>
 <body>
   <header>
@@ -163,7 +177,6 @@
       </ul>
     </nav>
   </header>
-
   <section id="beranda" class="hero">
     <div class="hero-text">
       <h2>Sanggar Seni Tiga Kendari (SASTIK)</h2>
@@ -207,6 +220,7 @@
       </div>
     </div>
   </section>
+  
   <div class="carousel-wrapper">
     <input type="radio" name="slider" id="slide-1" checked>
     <input type="radio" name="slider" id="slide-2">
@@ -224,7 +238,7 @@
             <img src="IMG-luloo5.jpg" alt="Slide 3 - Gurun">
             <div class="caption">SASTIK</div>
         </div>
-    </div>  
+    </div>
     <div class="navigation-dots">
         <label for="slide-1" class="dot"></label>
         <label for="slide-2" class="dot"></label>
@@ -254,6 +268,8 @@
       alert('Terima kasih '+nama+'! Pesan kamu sudah terkirim ke SASTIK.');
       e.target.reset();
     }
+
+    // 🔸 Efek animasi saat discroll
     const animElements = document.querySelectorAll('img.animate');
     function animOnScroll(){
       animElements.forEach(el=>{
@@ -311,4 +327,3 @@ imgs.forEach(img=>{
 </script>
 </body>
 </html>
-
