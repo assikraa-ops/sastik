@@ -1,4 +1,4 @@
-<!doctype html>
+
 <html lang="id">
 <head>
   <meta charset="utf-8" />
@@ -27,36 +27,27 @@
     .hero-text p{max-width:550px;line-height:1.7;color:#fce8e8;}
     .hero-img{flex:1;min-width:300px;text-align:center;}
     .hero-img img{width:100%;max-width:400px;border-radius:12px;box-shadow:0 0 20px rgba(255,215,0,0.5);animation:float 4s ease-in-out infinite;}
-
     section{padding:3rem 2rem;}
     h2.section-title{text-align:center;color:var(--emas);margin-bottom:1rem;font-size:1.8rem;}
     p.section-sub{text-align:center;margin-bottom:2rem;color:#f8dcdc;}
-
     .profil,.tarian,.galeri,.kontak{max-width:1100px;margin:auto;}
-
     .profil-content{display:flex;flex-wrap:wrap;align-items:center;gap:2rem;}
     .profil-content img{width:100%;max-width:400px;border-radius:12px;box-shadow:0 0 15px rgba(255,255,255,0.2)}
     .profil-content div{flex:1;}
-
     .tarian-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.5rem;}
     .tarian-card{background:rgba(255,255,255,0.05);border-radius:12px;padding:1rem;text-align:center;transition:transform 0.3s;}
     .tarian-card:hover{transform:scale(1.05);}
     .tarian-card img{width:100%;border-radius:10px;margin-bottom:.5rem;}
-
     .galeri-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1rem;}
     .galeri-grid img{width:100%;border-radius:10px;transition:transform 0.3s,box-shadow 0.3s;}
     .galeri-grid img:hover{transform:scale(1.05);box-shadow:0 0 15px var(--emas);}
-
     .kontak-form{display:flex;flex-direction:column;gap:1rem;max-width:600px;margin:auto;}
     input,textarea{padding:.8rem;border:none;border-radius:8px;background:rgba(255,255,255,0.1);color:var(--putih);}
     button{padding:.8rem 1.5rem;background:var(--emas);color:var(--hitam);border:none;border-radius:8px;font-weight:600;cursor:pointer;transition:0.3s;}
     button:hover{background:var(--merah-cerah);color:var(--putih);}
-
     footer{text-align:center;padding:1.5rem;background:rgba(0,0,0,0.8);color:#ddd;margin-top:2rem;font-size:.9rem;}
-
     @keyframes fadeIn{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:translateY(0);}}
     @keyframes float{0%{transform:translateY(0);}50%{transform:translateY(-10px);}100%{transform:translateY(0);}}
-
     /* 🎭 ANIMASI TAMBAHAN UNTUK GAMBAR */
     @keyframes fadeInUp {
       from {opacity: 0; transform: translateY(30px);}
@@ -77,91 +68,6 @@
       box-shadow: 0 0 20px gold;
     }
   
-  /* Gaya Wrapper Carousel */
-.carousel-wrapper {
-    position: relative;
-    max-width: 1000px; /* Atur lebar maksimal */
-    margin: 40px auto;
-    overflow: hidden; /* Penting untuk menyembunyikan slide yang tidak aktif */
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-}
-
-/* Sembunyikan Input Radio */
-.carousel-wrapper input[type="radio"] {
-    display: none;
-}
-
-/* Kontainer yang akan bergeser */
-.carousel-container {
-    display: flex; /* Membuat slide berbaris horizontal */
-    width: 300%; /* 3 slide * 100% = 300% */
-    transition: transform 0.6s ease-in-out; /* Animasi pergeseran */
-}
-
-/* Gaya per Slide */
-.slide {
-    width: 33.33%; /* 100% / 3 slide */
-    height: 400px;
-    position: relative;
-}
-
-.slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-
-/* Caption Teks */
-.caption {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    color: white;
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
-}
-
-/* Logic Pergeseran Slide (INTI) */
-/* Ketika slide-2 aktif, geser kontainer ke kiri 33.33% */
-#slide-2:checked ~ .carousel-container {
-    transform: translateX(-33.33%);
-}
-
-/* Ketika slide-3 aktif, geser kontainer ke kiri 66.66% */
-#slide-3:checked ~ .carousel-container {
-    transform: translateX(-66.66%);
-}
-
-/* Gaya Navigasi Dots */
-.navigation-dots {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    gap: 10px;
-}
-
-.dot {
-    cursor: pointer;
-    height: 12px;
-    width: 12px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: block;
-    transition: background-color 0.3s;
-}
-
-/* Gaya Dot yang Aktif */
-#slide-1:checked ~ .navigation-dots .dot:nth-child(1),
-#slide-2:checked ~ .navigation-dots .dot:nth-child(2),
-#slide-3:checked ~ .navigation-dots .dot:nth-child(3) {
-    background-color: #fff;
-    border: 2px solid #333;
-}
 
   </style>
 </head>
@@ -220,32 +126,6 @@
       </div>
     </div>
   </section>
-  
-  <div class="carousel-wrapper">
-    <input type="radio" name="slider" id="slide-1" checked>
-    <input type="radio" name="slider" id="slide-2">
-    <input type="radio" name="slider" id="slide-3">
-    <div class="carousel-container">
-        <div class="slide" id="s1">
-            <img src="IMG-luloo4.jpg" alt="Slide 1 - Hutan">
-            <div class="caption">SASTIK</div>
-        </div>
-        <div class="slide" id="s2">
-            <img src="IMG-merah.jpg" alt="Slide 2 - Pegunungan">
-            <div class="caption">SASTIK</div>
-        </div>
-        <div class="slide" id="s3">
-            <img src="IMG-luloo5.jpg" alt="Slide 3 - Gurun">
-            <div class="caption">SASTIK</div>
-        </div>
-    </div>
-    <div class="navigation-dots">
-        <label for="slide-1" class="dot"></label>
-        <label for="slide-2" class="dot"></label>
-        <label for="slide-3" class="dot"></label>
-    </div>
-</div>
-
   <section id="galeri" class="galeri">
     <h2 class="section-title">Galeri</h2>
     <p class="section-sub">Potret kebersamaan dan penampilan kami</p>
