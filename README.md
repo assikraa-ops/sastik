@@ -289,7 +289,7 @@
   </section>
 
   <footer>
-    <p>© 2025 SASTIK - Sanggar Seni Tiga Kendari. Semua Hak Dilindungi.</p>
+    <p>© 2025 SASTIK - Sanggar Seni Tiga Kendari.</p>
   </footer>
 
   <script>
