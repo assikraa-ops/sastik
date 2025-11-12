@@ -211,8 +211,8 @@
       </div>
       <div class="tarian-card">
         <img src="IMG-toraja.jpg" alt="Tari 4 etnis" class="animate">
-        <h3>Tari 4 etnis</h3>
-        <p>Tari 4 Etnis adalah tarian kreasi yang berasal dari Sulawesi Selatan yang memadukan unsur-unsur dari empat etnis terbesar di wilayah tersebut: Bugis, Makassar, Mandar, dan Toraja..</p>
+        <h3>Tarian paduppa</h3>
+        <p>Tari Paduppa adalah tarian tradisional dari suku Bugis-Makassar yang berfungsi sebagai tarian penyambutan tamu, sering disebut sebagai tarian selamat datang</p>
       </div>
     </div>
   </section>
