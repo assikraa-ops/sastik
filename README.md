@@ -201,8 +201,13 @@
       </div>
       <div class="tarian-card">
         <img src="IMG-tameng.jpg" alt="Tari Amoara" class="animate">
-        <h3>Tari Amoara</h3>
+        <h3>Tari Amoara & mondotambe</h3>
         <p>Tarian kebanggaan SASTIK yang memadukan energi muda dan tradisi daerah dengan gaya elegan.</p>
+      </div>
+      <div class="tarian-card">
+        <img src="IMG-toraja.jpg" alt="Tari 4 etnis" class="animate">
+        <h3>Tari 4 etnis</h3>
+        <p>Tari 4 Etnis adalah tarian kreasi yang berasal dari Sulawesi Selatan yang memadukan unsur-unsur dari empat etnis terbesar di wilayah tersebut: Bugis, Makassar, Mandar, dan Toraja..</p>
       </div>
       <div class="tarian-card">
         <img src="IMG-toraja.jpg" alt="Tari 4 etnis" class="animate">
@@ -211,7 +216,6 @@
       </div>
     </div>
   </section>
-  
   <div class="carousel-wrapper">
     <input type="radio" name="slider" id="slide-1" checked>
     <input type="radio" name="slider" id="slide-2">
