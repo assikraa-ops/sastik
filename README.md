@@ -241,6 +241,42 @@
     </div>
 </div>
 
+<section id="video" class="video">
+  <h2 class="section-title">Nonton Video Kami</h2>
+  <p class="section-sub">Saksikan penampilan tarian kami secara langsung</p>
+  <div class="video-grid" style="display:flex;justify-content:center;flex-wrap:wrap;gap:2rem;">
+    <div style="flex:1;min-width:300px;max-width:560px;cursor:pointer;">
+      <img src="IMG-video.png" alt="Video Tari SASTIK" 
+           style="width:100%;border-radius:12px;box-shadow:0 0 15px rgba(255,215,0,0.5);transition:0.3s;" 
+           onclick="tontonVideo('5cQ68zCqpKw')">
+      <p class="section-sub">tarian 4 etnis sulawesi selatan yang di bawakan oleh smk n 3 kendari</p>
+    </div>
+  </div>
+</section>
+
+<script>
+  function tontonVideo(id){
+    const popup = document.createElement('div');
+    popup.style.position = 'fixed';
+    popup.style.top = 0;
+    popup.style.left = 0;
+    popup.style.width = '100%';
+    popup.style.height = '100%';
+    popup.style.background = 'rgba(0,0,0,0.9)';
+    popup.style.display = 'flex';
+    popup.style.alignItems = 'center';
+    popup.style.justifyContent = 'center';
+    popup.style.zIndex = 9999;  
+    popup.style.cursor = 'pointer';
+    popup.innerHTML = `<iframe width="90%" height="80%" src="https://www.youtube.com/embed/${id}?autoplay=1" 
+      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+    popup.addEventListener('click', (e)=>{
+      if(e.target === popup) popup.remove();  
+    });
+    document.body.appendChild(popup);
+  }
+</script>
+
   <section id="galeri" class="galeri">
     <h2 class="section-title">Galeri</h2>
     <p class="section-sub">Potret kebersamaan dan penampilan kami</p>
