@@ -154,12 +154,37 @@
     border: 2px solid #333;
 }
 
+.logo-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  animation: logoPulse 3s infinite ease-in-out;
+  box-shadow: 0 0 15px rgba(255,255,255,0.3);
+}
+
+/* Animasi lembut berdenyut */
+@keyframes logoPulse {
+  0% { transform: scale(1); box-shadow: 0 0 10px rgba(255,255,255,0.3); }
+  50% { transform: scale(1.1); box-shadow: 0 0 20px gold; }
+  100% { transform: scale(1); box-shadow: 0 0 10px rgba(255,255,255,0.3); }
+}
+
   </style>
 </head>
 <body>
   <header>
-    <h1>SASTIK</h1>
-    <nav>
+  <div class="logo-box">
+    <img src="logo-sastik.jpg" alt="Logo SASTIK" class="logo animate-logo">
+  </div>
+  <h1>SASTIK</h1>
+  <nav>
       <ul>
         <li><a href="#beranda">Beranda</a></li>
         <li><a href="#profil">Profil</a></li>
