@@ -217,6 +217,27 @@ nav a:hover::after {
   }
 }
 
+/* ==================================== */
+/* 🔴 PERBAIKAN UNTUK MENU AKTIF (TAB PENUH) */
+/* ==================================== */
+/* 1. Atur link agar bisa mengisi penuh item LI (supaya background terlihat) */
+nav ul li a {
+  display: block; 
+  padding: 0.5rem 1rem; /* Tambahkan padding agar tab terlihat lebih besar */
+}
+/* 2. Atur tampilan untuk item LI yang aktif */
+nav ul li.active {
+  background-color: var(--merah-cerah); /* Menggunakan warna merah cerah */
+  border-radius: 8px; /* Sudut melengkung */
+  box-shadow: 0 0 10px rgba(230, 57, 70, 0.5); /* Efek bayangan halus */
+}
+/* 3. Ubah warna teks link di dalam tab aktif */
+nav ul li.active a {
+  color: var(--putih); 
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+
   </style>
 </head>
 <body>
