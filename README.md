@@ -80,30 +80,27 @@
         <li><a href="#profil">Profil</a></li>
         <li><a href="#tarian">Tarian</a></li>
         <li><a href="#galeri">Galeri</a></li>
-        .carousel-wrapper {
+    .carousel-wrapper {
     position: relative;
-    max-width: 1000px; /* Atur lebar maksimal */
+    max-width: 1000px; 
     margin: 40px auto;
-    overflow: hidden; /* Penting untuk menyembunyikan slide yang tidak aktif */
+    overflow: hidden;
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
-/* Sembunyikan Input Radio */
 .carousel-wrapper input[type="radio"] {
     display: none;
 }
 
-/* Kontainer yang akan bergeser */
 .carousel-container {
-    display: flex; /* Membuat slide berbaris horizontal */
-    width: 300%; /* 3 slide * 100% = 300% */
-    transition: transform 0.6s ease-in-out; /* Animasi pergeseran */
+    display: flex;
+    width: 300%;
+    transition: transform 0.6s ease-in-out; 
 }
 
-/* Gaya per Slide */
 .slide {
-    width: 33.33%; /* 100% / 3 slide */
+    width: 33.33%; 
     height: 400px;
     position: relative;
 }
@@ -115,7 +112,6 @@
     display: block;
 }
 
-/* Caption Teks */
 .caption {
     position: absolute;
     bottom: 20px;
@@ -126,18 +122,14 @@
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
 }
 
-/* Logic Pergeseran Slide (INTI) */
-/* Ketika slide-2 aktif, geser kontainer ke kiri 33.33% */
 #slide-2:checked ~ .carousel-container {
     transform: translateX(-33.33%);
 }
 
-/* Ketika slide-3 aktif, geser kontainer ke kiri 66.66% */
 #slide-3:checked ~ .carousel-container {
     transform: translateX(-66.66%);
 }
 
-/* Gaya Navigasi Dots */
 .navigation-dots {
     position: absolute;
     bottom: 10px;
@@ -157,7 +149,6 @@
     transition: background-color 0.3s;
 }
 
-/* Gaya Dot yang Aktif */
 #slide-1:checked ~ .navigation-dots .dot:nth-child(1),
 #slide-2:checked ~ .navigation-dots .dot:nth-child(2),
 #slide-3:checked ~ .navigation-dots .dot:nth-child(3) {
