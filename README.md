@@ -80,81 +80,6 @@
         <li><a href="#profil">Profil</a></li>
         <li><a href="#tarian">Tarian</a></li>
         <li><a href="#galeri">Galeri</a></li>
-    .carousel-wrapper {
-    position: relative;
-    max-width: 1000px; 
-    margin: 40px auto;
-    overflow: hidden;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-}
-
-.carousel-wrapper input[type="radio"] {
-    display: none;
-}
-
-.carousel-container {
-    display: flex;
-    width: 300%;
-    transition: transform 0.6s ease-in-out; 
-}
-
-.slide {
-    width: 33.33%; 
-    height: 400px;
-    position: relative;
-}
-
-.slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-
-.caption {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    color: white;
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
-}
-
-#slide-2:checked ~ .carousel-container {
-    transform: translateX(-33.33%);
-}
-
-#slide-3:checked ~ .carousel-container {
-    transform: translateX(-66.66%);
-}
-
-.navigation-dots {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    gap: 10px;
-}
-
-.dot {
-    cursor: pointer;
-    height: 12px;
-    width: 12px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: block;
-    transition: background-color 0.3s;
-}
-
-#slide-1:checked ~ .navigation-dots .dot:nth-child(1),
-#slide-2:checked ~ .navigation-dots .dot:nth-child(2),
-#slide-3:checked ~ .navigation-dots .dot:nth-child(3) {
-    background-color: #fff;
-    border: 2px solid #333;
-}
       </ul>
     </nav>
   </header>
@@ -201,30 +126,6 @@
       </div>
     </div>
   </section>
-  <div class="carousel-wrapper">
-    <input type="radio" name="slider" id="slide-1" checked>
-    <input type="radio" name="slider" id="slide-2">
-    <input type="radio" name="slider" id="slide-3">
-    <div class="carousel-container">
-        <div class="slide" id="s1">
-            <img src="IMG-luloo4.jpg" alt="Slide 1 - Hutan">
-            <div class="caption">SASTIK</div>
-        </div>
-        <div class="slide" id="s2">
-            <img src="IMG-merah.jpg" alt="Slide 2 - Pegunungan">
-            <div class="caption">SASTIK</div>
-        </div>
-        <div class="slide" id="s3">
-            <img src="IMG-luloo5.jpg" alt="Slide 3 - Gurun">
-            <div class="caption">SASTIK</div>
-        </div>
-    </div>
-    <div class="navigation-dots">
-        <label for="slide-1" class="dot"></label>
-        <label for="slide-2" class="dot"></label>
-        <label for="slide-3" class="dot"></label>
-    </div>
-</div>
   <section id="galeri" class="galeri">
     <h2 class="section-title">Galeri</h2>
     <p class="section-sub">Potret kebersamaan dan penampilan kami</p>
