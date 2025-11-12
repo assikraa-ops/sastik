@@ -176,6 +176,47 @@
   100% { transform: scale(1); box-shadow: 0 0 10px rgba(255,255,255,0.3); }
 }
 
+/* ✨ Animasi teks di header (judul dan menu) */
+header h1, nav a {
+  position: relative;
+  animation: fadeText 2s ease forwards;
+  opacity: 0;
+}
+
+/* Urutan animasi untuk menu satu per satu */
+nav a:nth-child(1) { animation-delay: 0.3s; }
+nav a:nth-child(2) { animation-delay: 0.6s; }
+nav a:nth-child(3) { animation-delay: 0.9s; }
+nav a:nth-child(4) { animation-delay: 1.2s; }
+
+/* Efek berkilau halus saat hover */
+nav a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0%;
+  height: 2px;
+  background: gold;
+  transition: width 0.4s ease;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* Animasi masuk perlahan dari atas */
+@keyframes fadeText {
+  from {
+    transform: translateY(-15px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
   </style>
 </head>
 <body>
