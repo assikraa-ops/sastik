@@ -352,29 +352,6 @@ nav a:hover::after {
     </div>
   </div>
 </section>
-
-<script>
-  function tontonVideo(id){
-    const popup = document.createElement('div');
-    popup.style.position = 'fixed';
-    popup.style.top = 0;
-    popup.style.left = 0;
-    popup.style.width = '100%';
-    popup.style.height = '100%';
-    popup.style.background = 'rgba(0,0,0,0.9)';
-    popup.style.display = 'flex';
-    popup.style.alignItems = 'center';
-    popup.style.justifyContent = 'center';
-    popup.style.zIndex = 9999;  
-    popup.style.cursor = 'pointer';
-    popup.innerHTML = `<iframe width="90%" height="80%" src="https://www.youtube.com/embed/${id}?autoplay=1" 
-      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
-    popup.addEventListener('click', (e)=>{
-      if(e.target === popup) popup.remove();  
-    });
-    document.body.appendChild(popup);
-  }
-</secript>
   
   <section id="galeri" class="galeri">
     <h2 class="section-title">Galeri</h2>
