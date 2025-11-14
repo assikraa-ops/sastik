@@ -288,7 +288,7 @@ nav a:hover::after {
     <input type="radio" name="slider" id="slide-3">
     <div class="carousel-container">
         <div class="slide" id="s1">
-            <img src="IMG-luloo4.jpg" alt="Slide 1 - Hutan">
+            <img src="hitam.JPG" alt="Slide 1 - Hutan">
             <div class="caption">SASTIK</div>
         </div>
         <div class="slide" id="s2">
