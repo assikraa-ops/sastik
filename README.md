@@ -374,8 +374,7 @@ nav a:hover::after {
     });
     document.body.appendChild(popup);
   }
-</script>
-
+  
   <section id="galeri" class="galeri">
     <h2 class="section-title">Galeri</h2>
     <p class="section-sub">Potret kebersamaan dan penampilan kami</p>
