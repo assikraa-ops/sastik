@@ -342,12 +342,13 @@ nav a:hover::after {
     document.body.appendChild(popup);
   }
 </script>
+
   <div class="video-grid" style="display:flex;justify-content:center;flex-wrap:wrap;gap:2rem;">
     <div style="flex:1;min-width:300px;max-width:355px;cursor:pointer;">
       <img src="IMG-video.png" alt="Video Tari SASTIK" 
            style="width:100%;border-radius:12px;box-shadow:0 0 15px rgba(255,215,0,0.5);transition:0.3s;" 
            onclick="tontonVideo('5cQ68zCqpKw')">
-      <p class="section-sub">tarian 4 etnis sulawesi selatan yang di bawakan oleh smk n 3 kendari</p>
+      <p class="section-sub">tarian haluoleo yang di bawakan oleh smk n 3 kendari</p>
     </div>
   </div>
 </section>
