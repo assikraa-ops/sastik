@@ -1,4 +1,3 @@
-
 <html lang="id">
 <head>
   <meta charset="utf-8" />
@@ -288,7 +287,7 @@ nav a:hover::after {
     <input type="radio" name="slider" id="slide-3">
     <div class="carousel-container">
         <div class="slide" id="s1">
-            <img src="hitam.JPG" alt="Slide 1 - Hutan">
+            <img src="IMG-luloo4.jpg" alt="Slide 1 - Hutan">
             <div class="caption">SASTIK</div>
         </div>
         <div class="slide" id="s2">
@@ -343,16 +342,6 @@ nav a:hover::after {
   }
 </script>
 
-  <div class="video-grid" style="display:flex;justify-content:center;flex-wrap:wrap;gap:2rem;">
-    <div style="flex:1;min-width:300px;max-width:355px;cursor:pointer;">
-      <img src="IMG-video.png" alt="Video Tari SASTIK" 
-           style="width:100%;border-radius:12px;box-shadow:0 0 15px rgba(255,215,0,0.5);transition:0.3s;" 
-           onclick="tontonVideo('5cQ68zCqpKw')">
-      <p class="section-sub">tarian haluoleo yang di bawakan oleh smk n 3 kendari</p>
-    </div>
-  </div>
-</section>
-  
   <section id="galeri" class="galeri">
     <h2 class="section-title">Galeri</h2>
     <p class="section-sub">Potret kebersamaan dan penampilan kami</p>
@@ -434,4 +423,4 @@ imgs.forEach(img=>{
 </script>
 </body>
 </html>
-              
+                        
