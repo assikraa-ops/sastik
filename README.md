@@ -342,7 +342,6 @@ nav a:hover::after {
     document.body.appendChild(popup);
   }
 </script>
-
   <div class="video-grid" style="display:flex;justify-content:center;flex-wrap:wrap;gap:2rem;">
     <div style="flex:1;min-width:300px;max-width:355px;cursor:pointer;">
       <img src="IMG-video.png" alt="Video Tari SASTIK" 
