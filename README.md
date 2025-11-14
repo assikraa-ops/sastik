@@ -343,9 +343,6 @@ nav a:hover::after {
   }
 </script>
 
-<section id="video" class="video">
-  <h2 class="section-title">Nonton Video Kami</h2>
-  <p class="section-sub">Saksikan penampilan tarian kami secara langsung</p>
   <div class="video-grid" style="display:flex;justify-content:center;flex-wrap:wrap;gap:2rem;">
     <div style="flex:1;min-width:300px;max-width:355px;cursor:pointer;">
       <img src="IMG-video.png" alt="Video Tari SASTIK" 
