@@ -91,7 +91,7 @@
 
 /* Gaya per Slide */
 .slide {
-    width: 33.33%; /* 100% / 3 slide */
+    width: 99.99%; /* 100% / 3 slide */
     height: 400px;
     position: relative;
 }
@@ -125,6 +125,10 @@
     transform: translateX(-66.66%);
 }
 
+#slide-4:checked ~ .carousel-container {
+    transform: translateX(-99.99%);
+}
+  
 /* Gaya Navigasi Dots */
 .navigation-dots {
     position: absolute;
@@ -144,11 +148,11 @@
     display: block;
     transition: background-color 0.3s;
 }
-
 /* Gaya Dot yang Aktif */
 #slide-1:checked ~ .navigation-dots .dot:nth-child(1),
 #slide-2:checked ~ .navigation-dots .dot:nth-child(2),
-#slide-3:checked ~ .navigation-dots .dot:nth-child(3) {
+#slide-3:checked ~ .navigation-dots .dot:nth-child(3),
+#slide-4:checked ~ .navigation-dots .dot:nth-child(4){
     background-color: #fff;
     border: 2px solid #333;
 }
@@ -215,8 +219,7 @@ nav a:hover::after {
     opacity: 1;
   }
 }
-
-  </style>
+</style>
 </head>
 <body>
   <header>
@@ -261,22 +264,22 @@ nav a:hover::after {
     <div class="tarian-list">
       <div class="tarian-card">
         <img src="IMG-parang.jpg" alt="Tari Haluoleo" class="animate">
-        <h3>Tari Haluoleo</h3>
+        <h3>Haluoleo</h3>
         <p>Tari penyambutan khas Sulawesi Tenggara yang menggambarkan kehangatan dan persaudaraan.</p>
       </div>
       <div class="tarian-card">
         <img src="IMG-tameng.jpg" alt="Tari Amoara" class="animate">
-        <h3>Tari Amoara & mondotambe</h3>
+        <h3>Amoara & mondotambe</h3>
         <p>Tarian kebanggaan SASTIK yang memadukan energi muda dan tradisi daerah dengan gaya elegan.</p>
       </div>
       <div class="tarian-card">
         <img src="IMG-toraja.jpg" alt="Tari 4 etnis" class="animate">
-        <h3>Tari 4 etnis</h3>
+        <h3>4 etnis</h3>
         <p>Tari 4 Etnis adalah tarian kreasi yang berasal dari Sulawesi Selatan yang memadukan unsur-unsur dari empat etnis terbesar di wilayah tersebut: Bugis, Makassar, Mandar, dan Toraja..</p>
       </div>
       <div class="tarian-card">
-        <img src="IMG-toraja.jpg" alt="Tari 4 etnis" class="animate">
-        <h3>Tarian paduppa</h3>
+        <img src="IMG-paduppa.jpg" alt="paduppa" class="animate">
+        <h3>paduppa</h3>
         <p>Tari Paduppa adalah tarian tradisional dari suku Bugis-Makassar yang berfungsi sebagai tarian penyambutan tamu, sering disebut sebagai tarian selamat datang</p>
       </div>
     </div>
@@ -285,9 +288,10 @@ nav a:hover::after {
     <input type="radio" name="slider" id="slide-1" checked>
     <input type="radio" name="slider" id="slide-2">
     <input type="radio" name="slider" id="slide-3">
+    <input type="radio" name="slider" id="slide-4">
     <div class="carousel-container">
         <div class="slide" id="s1">
-            <img src="IMG-luloo4.jpg" alt="Slide 1 - Hutan">
+            <img src="hitam.JPG" alt="Slide 1 - Hutan">
             <div class="caption">SASTIK</div>
         </div>
         <div class="slide" id="s2">
@@ -299,10 +303,15 @@ nav a:hover::after {
             <div class="caption">SASTIK</div>
         </div>
     </div>    
+    <div class="slide" id="s4">
+      <img src="IMG-sisi.jpg" alt="Slide 4 - sisii">
+      <div class="caption">SASTIK</div>
+    </div>
     <div class="navigation-dots">
         <label for="slide-1" class="dot"></label>
         <label for="slide-2" class="dot"></label>
         <label for="slide-3" class="dot"></label>
+        <label for="slide-4" class="dot"></label>
     </div>
 </div>
 
@@ -310,7 +319,7 @@ nav a:hover::after {
   <h2 class="section-title">Nonton Video Kami</h2>
   <p class="section-sub">Saksikan penampilan tarian kami secara langsung</p>
   <div class="video-grid" style="display:flex;justify-content:center;flex-wrap:wrap;gap:2rem;">
-    <div style="flex:1;min-width:300px;max-width:560px;cursor:pointer;">
+    <div style="flex:1;min-width:300px;max-width:372px;cursor:pointer;">
       <img src="IMG-video.png" alt="Video Tari SASTIK" 
            style="width:100%;border-radius:12px;box-shadow:0 0 15px rgba(255,215,0,0.5);transition:0.3s;" 
            onclick="tontonVideo('5cQ68zCqpKw')">
@@ -318,16 +327,26 @@ nav a:hover::after {
     </div>
   </div>
 </section>
-
 <div class="video-grid" style="display:flex;justify-content:center;flex-wrap:wrap;gap:2rem;">
-    <div style="flex:1;min-width:300px;max-width:357px;cursor:pointer;">
+    <div style="flex:1;min-width:300px;max-width:372px;cursor:pointer;">
+      <img src="IMG-video.png" alt="Video Tari SASTIK" 
+           style="width:100%;border-radius:12px;box-shadow:0 0 15px rgba(255,215,0,0.5);transition:0.3s;" 
+           onclick="tontonVideo('5cQ68zCqpKw')">
+      <p class="section-sub">tarian haluoleo yang di bawakan oleh smk n 3 kendari</p>
+    </div>
+  </div>
+</section>
+
+  <div class="video-grid" style="display:flex;justify-content:center;flex-wrap:wrap;gap:2rem;">
+    <div style="flex:1;min-width:300px;max-width:372px;cursor:pointer;">
       <img src="IMG-video.png" alt="Video Tari SASTIK" 
            style="width:100%;border-radius:12px;box-shadow:0 0 15px rgba(255,215,0,0.5);transition:0.3s;" 
            onclick="tontonVideo('5cQ68zCqpKw')">
       <p class="section-sub">tarian lulo tapis yang di bawakan oleh smk n 3 kendari</p>
     </div>
   </div>
-</script>
+  
+<script>
   function tontonVideo(id){
     const popup = document.createElement('div');
     popup.style.position = 'fixed';
@@ -349,7 +368,7 @@ nav a:hover::after {
     document.body.appendChild(popup);
   }
 </script>
-
+  
   <section id="galeri" class="galeri">
     <h2 class="section-title">Galeri</h2>
     <p class="section-sub">Potret kebersamaan dan penampilan kami</p>
@@ -358,8 +377,11 @@ nav a:hover::after {
       <img src="IMG-toraja.jpg" alt="Latihan tari" class="animate">
       <img src="IMG-satu.jpg" alt="Kostum tari" class="animate">
       <img src="IMG-tiga.jpg" alt="Pertunjukan panggung" class="animate">
+      <img src="IMG-sisi.jpg" alt="sisi andriani" class="animate">
+      <img src="IMG-hotel.jpg" alt="sastik" class="animate">
     </div>
   </section>
+
   <footer>
     <p>© 2025 SASTIK - Sanggar Seni Tiga Kendari.</p>
   </footer>
@@ -430,4 +452,3 @@ imgs.forEach(img=>{
 </script>
 </body>
 </html>
-                        
