@@ -327,8 +327,7 @@ nav a:hover::after {
       <p class="section-sub">tarian lulo tapis yang di bawakan oleh smk n 3 kendari</p>
     </div>
   </div>
-
-<script>
+</script>
   function tontonVideo(id){
     const popup = document.createElement('div');
     popup.style.position = 'fixed';
