@@ -383,7 +383,6 @@ nav a:hover::after {
       <img src="IMG-tiga.jpg" alt="Pertunjukan panggung" class="animate">
     </div>
   </section>
-
   <footer>
     <p>© 2025 SASTIK - Sanggar Seni Tiga Kendari.</p>
   </footer>
