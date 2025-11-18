@@ -66,7 +66,6 @@
       transform: scale(1.07);
       box-shadow: 0 0 20px gold;
     }
-  /* Update CSS untuk 4 Slide */
 .carousel-wrapper {
     position: relative;
     max-width: 1000px;
@@ -75,30 +74,25 @@
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
-
 .carousel-wrapper input[type="radio"] {
     display: none;
 }
-
 .carousel-container {
     display: flex;
     width: 400%; /* BERUBAH: Total 4 slide x 100% */
     transition: transform 0.6s ease-in-out;
 }
-
 .slide {
     width: 25%; /* BERUBAH: 100% dibagi 4 slide */
     height: 400px;
     position: relative;
 }
-
 .slide img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
 }
-
 .caption {
     position: absolute;
     bottom: 20px;
@@ -108,20 +102,16 @@
     font-weight: bold;
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
 }
-
 /* Logic Pergeseran Slide */
 #slide-2:checked ~ .carousel-container {
     transform: translateX(-25%);
 }
-
 #slide-3:checked ~ .carousel-container {
     transform: translateX(-50%);
 }
-
 #slide-4:checked ~ .carousel-container {
     transform: translateX(-75%); /* LOGIKA BARU */
 }
-
 /* Gaya Navigasi Dots */
 .navigation-dots {
     position: absolute;
@@ -131,7 +121,6 @@
     display: flex;
     gap: 10px;
 }
-
 .dot {
     cursor: pointer;
     height: 12px;
@@ -141,7 +130,6 @@
     display: block;
     transition: background-color 0.3s;
 }
-
 /* Gaya Dot yang Aktif */
 #slide-1:checked ~ .navigation-dots .dot:nth-child(1),
 #slide-2:checked ~ .navigation-dots .dot:nth-child(2),
@@ -150,7 +138,6 @@
     background-color: white;
     border: 2px solid #D32F2F;
 }
-
 .logo {
   width: 60px;
   height: 60px;
@@ -158,27 +145,23 @@
   animation: logoPulse 3s infinite ease-in-out;
   box-shadow: 0 0 15px rgba(255,255,255,0.3);
 }
-
 /* Animasi lembut berdenyut */
 @keyframes logoPulse {
   0% { transform: scale(1); box-shadow: 0 0 10px rgba(255,255,255,0.3); }
   50% { transform: scale(1.1); box-shadow: 0 0 20px gold; }
   100% { transform: scale(1); box-shadow: 0 0 10px rgba(255,255,255,0.3); }
 }
-
 /* ✨ Animasi teks di header (judul dan menu) */
 header h1, nav a {
   position: relative;
   animation: fadeText 2s ease forwards;
   opacity: 0;
 }
-
 /* Urutan animasi untuk menu satu per satu */
 nav a:nth-child(1) { animation-delay: 0.3s; }
 nav a:nth-child(2) { animation-delay: 0.6s; }
 nav a:nth-child(3) { animation-delay: 0.9s; }
 nav a:nth-child(4) { animation-delay: 1.2s; }
-
 /* Efek berkilau halus saat hover */
 nav a::after {
   content: '';
@@ -190,11 +173,9 @@ nav a::after {
   background: gold;
   transition: width 0.4s ease;
 }
-
 nav a:hover::after {
   width: 100%;
 }
-
 /* Animasi masuk perlahan dari atas */
 @keyframes fadeText {
   from {
