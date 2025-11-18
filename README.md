@@ -250,7 +250,7 @@ nav a:hover::after {
     <h2 class="section-title">Profil Sanggar</h2>
     <p class="section-sub">Menjaga dan melestarikan seni tari tradisional Kendari</p>
     <div class="profil-content">
-      <img src="IMG-tiga.jpg" alt="Latihan tari di sanggar" class="animate">
+      <img src="sedow.jpg" alt="Latihan tari di sanggar" class="animate">
       <div>
         <p>SASTIK (Sanggar Seni Tiga Kendari) didirikan dengan semangat untuk melestarikan budaya lokal melalui tari. Kami adalah keluarga besar penari muda yang berlatih, tampil, dan berbagi kebahagiaan lewat gerak dan irama.</p>
         <p>Dengan pelatih berpengalaman dan anggota yang solid, kami telah tampil di berbagai acara budaya dan festival daerah. Kami percaya bahwa setiap gerakan memiliki cerita dan setiap tarian adalah warisan.</p>
