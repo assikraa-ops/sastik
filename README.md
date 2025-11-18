@@ -327,6 +327,7 @@ nav a:hover::after {
     </div>
   </div>
 </section>
+
 <div class="video-grid" style="display:flex;justify-content:center;flex-wrap:wrap;gap:2rem;">
     <div style="flex:1;min-width:300px;max-width:372px;cursor:pointer;">
       <img src="IMG-video.png" alt="Video Tari SASTIK" 
