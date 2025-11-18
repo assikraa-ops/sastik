@@ -328,7 +328,7 @@ nav a:hover::after {
   </div>
 
 <div class="video-grid" style="display:flex;justify-content:center;flex-wrap:wrap;gap:2rem;">
-    <div style="flex:1;min-width:300px;max-width:372px;cursor:pointer;">
+    <div style="flex:1;min-width:300px;max-width:360px;cursor:pointer;">
       <img src="IMG-video.png" alt="Video Tari SASTIK" 
            style="width:100%;border-radius:12px;box-shadow:0 0 15px rgba(255,215,0,0.5);transition:0.3s;" 
            onclick="tontonVideo('5cQ68zCqpKw')">
@@ -337,7 +337,7 @@ nav a:hover::after {
   </div>
 
   <div class="video-grid" style="display:flex;justify-content:center;flex-wrap:wrap;gap:2rem;">
-    <div style="flex:1;min-width:300px;max-width:350px;cursor:pointer;">
+    <div style="flex:1;min-width:300px;max-width:360px;cursor:pointer;">
       <img src="IMG-video.png" alt="Video Tari SASTIK" 
            style="width:100%;border-radius:12px;box-shadow:0 0 15px rgba(255,215,0,0.5);transition:0.3s;" 
            onclick="tontonVideo('5cQ68zCqpKw')">
