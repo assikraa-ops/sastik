@@ -67,95 +67,32 @@
       box-shadow: 0 0 20px gold;
     }
   
-  /* Gaya Wrapper Carousel */
-.carousel-wrapper {
-    position: relative;
-    max-width: 1000px; /* Atur lebar maksimal */
-    margin: 40px auto;
-    overflow: hidden; /* Penting untuk menyembunyikan slide yang tidak aktif */
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-}
-
-/* Sembunyikan Input Radio */
-.carousel-wrapper input[type="radio"] {
-    display: none;
-}
-
-/* Kontainer yang akan bergeser */
-.carousel-container {
-    display: flex; /* Membuat slide berbaris horizontal */
-    width: 300%; /* 3 slide * 100% = 300% */
-    transition: transform 0.6s ease-in-out; /* Animasi pergeseran */
-}
-
-/* Gaya per Slide */
-.slide {
-    width: 99.99%; /* 100% / 3 slide */
-    height: 400px;
-    position: relative;
-}
-
-.slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-
-/* Caption Teks */
-.caption {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    color: white;
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
-}
-
-/* Logic Pergeseran Slide (INTI) */
-/* Ketika slide-2 aktif, geser kontainer ke kiri 33.33% */
-#slide-2:checked ~ .carousel-container {
-    transform: translateX(-33.33%);
-}
-
-/* Ketika slide-3 aktif, geser kontainer ke kiri 66.66% */
-#slide-3:checked ~ .carousel-container {
-    transform: translateX(-66.66%);
-}
-
-#slide-4:checked ~ .carousel-container {
-    transform: translateX(-99.99%);
-}
-  
-/* Gaya Navigasi Dots */
-.navigation-dots {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    gap: 10px;
-}
-
-.dot {
-    cursor: pointer;
-    height: 12px;
-    width: 12px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: block;
-    transition: background-color 0.3s;
-}
-/* Gaya Dot yang Aktif */
-#slide-1:checked ~ .navigation-dots .dot:nth-child(1),
-#slide-2:checked ~ .navigation-dots .dot:nth-child(2),
-#slide-3:checked ~ .navigation-dots .dot:nth-child(3),
-#slide-4:checked ~ .navigation-dots .dot:nth-child(4){
-    background-color: #fff;
-    border: 2px solid #333;
-}
+  <div class="carousel-wrapper">
+    <input type="radio" name="slider" id="slide-1" checked>
+    <input type="radio" name="slider" id="slide-2">
+    <input type="radio" name="slider" id="slide-3">
+    <input type="radio" name="slider" id="slide-4"> <div class="carousel-container">
+        <div class="slide" id="s1">
+            <img src="hitam.jpg" alt="Slide 1 - Tarian Tradisional">
+            <div class="caption">SASTIK</div>
+        </div>
+        <div class="slide" id="s2">
+            <img src="IMG-luloo5.jpg" alt="Slide 2 - Penari SASTIK">
+            <div class="caption">SASTIK</div>
+        </div>
+        <div class="slide" id="s3">
+            <img src="IMG-merah.jpg" alt="Slide 3 - Panggung Pertunjukan">
+            <div class="caption">SASTIK</div>
+        </div>
+        <div class="slide" id="s4"> <img src="IMG-sisi.jpg" alt="Slide 4 - Latihan Bersama">
+            <div class="caption">SASTIK</div>
+        </div>
+    </div>
+    <div class="navigation-dots">
+        <label for="slide-1" class="dot"></label>
+        <label for="slide-2" class="dot"></label>
+        <label for="slide-3" class="dot"></label>
+        <label for="slide-4" class="dot"></label> </div>
 
 .logo-box {
   display: flex;
@@ -288,32 +225,28 @@ nav a:hover::after {
     <input type="radio" name="slider" id="slide-1" checked>
     <input type="radio" name="slider" id="slide-2">
     <input type="radio" name="slider" id="slide-3">
-    <input type="radio" name="slider" id="slide-4">
-    <div class="carousel-container">
+    <input type="radio" name="slider" id="slide-4"> <div class="carousel-container">
         <div class="slide" id="s1">
-            <img src="hitam.JPG" alt="Slide 1 - Hutan">
+            <img src="hitam.jpg" alt="Slide 1 - Tarian Tradisional">
             <div class="caption">SASTIK</div>
         </div>
         <div class="slide" id="s2">
-            <img src="IMG-merah.jpg" alt="Slide 2 - Pegunungan">
+            <img src="IMG-luloo5.jpg" alt="Slide 2 - Penari SASTIK">
             <div class="caption">SASTIK</div>
         </div>
         <div class="slide" id="s3">
-            <img src="IMG-luloo5.jpg" alt="Slide 3 - Gurun">
+            <img src="IMG-merah.jpg" alt="Slide 3 - Panggung Pertunjukan">
             <div class="caption">SASTIK</div>
         </div>
-    </div>    
-    <div class="slide" id="s4">
-      <img src="IMG-sisi.jpg" alt="Slide 4 - sisii">
-      <div class="caption">SASTIK</div>
+        <div class="slide" id="s4"> <img src="IMG-sisi.jpg" alt="Slide 4 - Latihan Bersama">
+            <div class="caption">SASTIK</div>
+        </div>
     </div>
     <div class="navigation-dots">
         <label for="slide-1" class="dot"></label>
         <label for="slide-2" class="dot"></label>
         <label for="slide-3" class="dot"></label>
-        <label for="slide-4" class="dot"></label>
-    </div>
-</div>
+        <label for="slide-4" class="dot"></label> </div>
 
 <section id="video" class="video">
   <h2 class="section-title">Nonton Video Kami</h2>
