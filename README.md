@@ -66,39 +66,89 @@
       transform: scale(1.07);
       box-shadow: 0 0 20px gold;
     }
-  
-  <div class="carousel-wrapper">
-    <input type="radio" name="slider" id="slide-1" checked>
-    <input type="radio" name="slider" id="slide-2">
-    <input type="radio" name="slider" id="slide-3">
-    <input type="radio" name="slider" id="slide-4"> <div class="carousel-container">
-        <div class="slide" id="s1">
-            <img src="hitam.jpg" alt="Slide 1 - Tarian Tradisional">
-            <div class="caption">SASTIK</div>
-        </div>
-        <div class="slide" id="s2">
-            <img src="IMG-luloo5.jpg" alt="Slide 2 - Penari SASTIK">
-            <div class="caption">SASTIK</div>
-        </div>
-        <div class="slide" id="s3">
-            <img src="IMG-merah.jpg" alt="Slide 3 - Panggung Pertunjukan">
-            <div class="caption">SASTIK</div>
-        </div>
-        <div class="slide" id="s4"> <img src="IMG-sisi.jpg" alt="Slide 4 - Latihan Bersama">
-            <div class="caption">SASTIK</div>
-        </div>
-    </div>
-    <div class="navigation-dots">
-        <label for="slide-1" class="dot"></label>
-        <label for="slide-2" class="dot"></label>
-        <label for="slide-3" class="dot"></label>
-        <label for="slide-4" class="dot"></label> </div>
+  /* Update CSS untuk 4 Slide */
+.carousel-wrapper {
+    position: relative;
+    max-width: 1000px;
+    margin: 40px auto;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
 
-.logo-box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: 10px;
+.carousel-wrapper input[type="radio"] {
+    display: none;
+}
+
+.carousel-container {
+    display: flex;
+    width: 400%; /* BERUBAH: Total 4 slide x 100% */
+    transition: transform 0.6s ease-in-out;
+}
+
+.slide {
+    width: 25%; /* BERUBAH: 100% dibagi 4 slide */
+    height: 400px;
+    position: relative;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.caption {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Logic Pergeseran Slide */
+#slide-2:checked ~ .carousel-container {
+    transform: translateX(-25%);
+}
+
+#slide-3:checked ~ .carousel-container {
+    transform: translateX(-50%);
+}
+
+#slide-4:checked ~ .carousel-container {
+    transform: translateX(-75%); /* LOGIKA BARU */
+}
+
+/* Gaya Navigasi Dots */
+.navigation-dots {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.dot {
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    background-color: #E57373;
+    border-radius: 50%;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+/* Gaya Dot yang Aktif */
+#slide-1:checked ~ .navigation-dots .dot:nth-child(1),
+#slide-2:checked ~ .navigation-dots .dot:nth-child(2),
+#slide-3:checked ~ .navigation-dots .dot:nth-child(3),
+#slide-4:checked ~ .navigation-dots .dot:nth-child(4) { /* DOT KE-4 DITAMBAH */
+    background-color: white;
+    border: 2px solid #D32F2F;
 }
 
 .logo {
