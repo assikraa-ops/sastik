@@ -336,7 +336,6 @@ nav a:hover::after {
       <p class="section-sub">tarian haluoleo yang di bawakan oleh smk n 3 kendari</p>
     </div>
   </div>
-</section>
 
   <div class="video-grid" style="display:flex;justify-content:center;flex-wrap:wrap;gap:2rem;">
     <div style="flex:1;min-width:300px;max-width:372px;cursor:pointer;">
