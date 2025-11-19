@@ -200,21 +200,21 @@
     <div class="organisasi-grid">
         <div class="jabatan-card organisasi-pembina" style="width: 80%; margin-bottom: 2rem;">
             <h3>PEMBINA</h3>
-            <p>[NAMA PEMBINA]</p>
+            <p>WAHYU C.R</p>
         </div>
     </div>   
     <div class="organisasi-grid" style="align-items: flex-start;">       
         <div class="jabatan-card">
-            <h3>KETUA UMUM</h3>
-            <p>[NAMA KETUA UMUM]</p>
+            <h3>PELATIH</h3>
+            <p>KAK ARDI</p>
         </div>       
         <div class="jabatan-card">
-            <h3>WAKIL KETUA</h3>
-            <p>[NAMA WAKIL KETUA]</p>
+            <h3>KETUA</h3>
+            <p>SRI</p>
         </div>       
         <div class="jabatan-card organisasi-pelatih">
-            <h3>KOORDINATOR PELATIH</h3>
-            <p>[NAMA KOORDINATOR PELATIH]</p>
+            <h3>WAKIL KETUA</h3>
+            <p>GEDE FAJAR JULIANA</p>
         </div>
     </div>   
     <div class="organisasi-grid" style="margin-top: 2rem;">
