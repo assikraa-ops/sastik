@@ -93,7 +93,49 @@
     nav a:nth-child(1) { animation-delay: 0.3s; } nav a:nth-child(2) { animation-delay: 0.6s; } nav a:nth-child(3) { animation-delay: 0.9s; } nav a:nth-child(4) { animation-delay: 1.2s; }  
     nav a::after { content: ''; position: absolute; left: 0; bottom: -3px; width: 0%; height: 2px; background: gold; transition: width 0.4s ease; }  
     nav a:hover::after { width: 100%; }  
-    @keyframes fadeText { from { transform: translateY(-15px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }  
+    @keyframes fadeText { from { transform: translateY(-15px); opacity: 0; } to { transform: translateY(0); opacity: 1; } } 
+    /* ===== CSS BARU UNTUK ORGANISASI ===== */
+.organisasi-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.jabatan-card {
+    background: var(--merah-tua);
+    color: var(--putih);
+    padding: 1.5rem;
+    border-radius: 12px;
+    text-align: center;
+    width: 250px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 2px solid var(--emas);
+}
+.jabatan-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(255, 215, 0, 0.5);
+}
+.jabatan-card h3 {
+    color: var(--emas);
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+.jabatan-card p {
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-top: 0;
+}
+.organisasi-pembina {
+    background: var(--hitam);
+    border-color: var(--merah-cerah);
+}
+.organisasi-pelatih {
+    background: rgba(230, 57, 70, 0.9);
+}
+/* ==================================== */
+                  
   </style>  
 </head>  
 <body>  
@@ -151,6 +193,36 @@
           <h3>4 etnis</h3>  
           <p>Tari 4 Etnis adalah tarian kreasi yang berasal dari Sulawesi Selatan yang memadukan unsur-unsur dari empat etnis terbesar di wilayah tersebut: Bugis, Makassar, Mandar, dan Toraja.</p>  
         </div>  
+
+<section id="organisasi" class="organisasi">
+    <h2 class="section-title">Struktur Organisasi SASTIK</h2>
+    <p class="section-sub">Para pemimpin dan pembimbing Sanggar Seni Tiga Kendari</p>
+    <div class="organisasi-grid">
+        <div class="jabatan-card organisasi-pembina" style="width: 80%; margin-bottom: 2rem;">
+            <h3>PEMBINA</h3>
+            <p>[NAMA PEMBINA]</p>
+        </div>
+    </div>   
+    <div class="organisasi-grid" style="align-items: flex-start;">       
+        <div class="jabatan-card">
+            <h3>KETUA UMUM</h3>
+            <p>[NAMA KETUA UMUM]</p>
+        </div>       
+        <div class="jabatan-card">
+            <h3>WAKIL KETUA</h3>
+            <p>[NAMA WAKIL KETUA]</p>
+        </div>       
+        <div class="jabatan-card organisasi-pelatih">
+            <h3>KOORDINATOR PELATIH</h3>
+            <p>[NAMA KOORDINATOR PELATIH]</p>
+        </div>
+    </div>   
+    <div class="organisasi-grid" style="margin-top: 2rem;">
+        <p class="section-sub" style="max-width: 600px;">
+            *Anda bisa menambahkan jabatan lain (Sekretaris, Bendahara, dll.) dengan menyalin salah satu kotak di atas.
+        </p>
+    </div>
+</section>        
         <div class="tarian-card">  
           <img src="IMG-paduppa.jpg" alt="paduppa" class="animate" />  
           <h3>paduppa</h3>  
