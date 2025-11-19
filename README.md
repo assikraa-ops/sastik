@@ -1,10 +1,29 @@
+<!DOCTYPE html>
 <html lang="id">
 <head>
   <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>SASTIK - Sanggar Seni Tiga Kendari</title>
   <meta name="description" content="Website resmi Sanggar Seni Tiga Kendari (SASTIK) – Sanggar seni tari tradisional dan modern dari Kendari." />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <meta name="generator" content="Jekyll v3.10.0" />
+  <meta property="og:title" content="sastik" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:description" content="website" />
+  <meta property="og:url" content="https://assikraa-ops.github.io/sastik/" />
+  <meta property="og:site_name" content="sastik" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary" />
+  <meta property="twitter:title" content="sastik" />
+  <link rel="canonical" href="https://assikraa-ops.github.io/sastik/" />
+  <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"WebSite","description":"website","headline":"sastik","name":"sastik","url":"https://assikraa-ops.github.io/sastik/"}
+  </script>
+
+  <!-- jika punya file css eksternal tetap bisa dipakai -->
+  <link rel="stylesheet" href="/sastik/assets/css/style.css?v=a9c3450857110ad44de46de247294a3e4e4d0113">
+
+  <!-- ====== Style internal (dari kode awal) ====== -->
   <style>
     :root{
       --merah-tua:#8B0000;
@@ -45,319 +64,224 @@
     button{padding:.8rem 1.5rem;background:var(--emas);color:var(--hitam);border:none;border-radius:8px;font-weight:600;cursor:pointer;transition:0.3s;}
     button:hover{background:var(--merah-cerah);color:var(--putih);}
     footer{text-align:center;padding:1.5rem;background:rgba(0,0,0,0.8);color:#ddd;margin-top:2rem;font-size:.9rem;}
-    @keyframes fadeIn{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:translateY(0);}}
-    @keyframes float{0%{transform:translateY(0);}50%{transform:translateY(-10px);}100%{transform:translateY(0);}}
-    /* 🎭 ANIMASI TAMBAHAN UNTUK GAMBAR */
-    @keyframes fadeInUp {
-      from {opacity: 0; transform: translateY(30px);}
-      to {opacity: 1; transform: translateY(0);}
+    @keyframes fadeIn{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:translateY(0);} }
+    @keyframes float{0%{transform:translateY(0);}50%{transform:translateY(-10px);}100%{transform:translateY(0);} }
+    @keyframes fadeInUp {from {opacity: 0; transform: translateY(30px);} to {opacity: 1; transform: translateY(0);} }
+    img.animate {opacity: 0; transform: translateY(30px); transition: all 1s ease;}
+    img.animate.show {opacity: 1; transform: translateY(0); animation: fadeInUp 1.2s ease forwards;}
+    img:hover {transform: scale(1.07); box-shadow: 0 0 20px gold;}
+    .carousel-wrapper {position: relative; max-width: 1000px; margin: 40px auto; overflow: hidden; border-radius: 15px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); }
+
+    /* Sembunyikan input radio dengan cara yang aman (tidak menampilkan teks HTML di halaman) */
+    .carousel-wrapper input[type="radio"] { position: absolute; left: -9999px; }
+
+    .carousel-container {display: flex; width: 400%; transition: transform 0.6s ease-in-out; }
+    .slide { width: 25%; height: 400px; position: relative; }
+    .slide img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .caption { position: absolute; bottom: 20px; left: 20px; color: white; font-size: 1.5rem; font-weight: bold; text-shadow: 0 0 5px rgba(0, 0, 0, 0.7); }
+
+    /* Logic Pergeseran Slide (menggeser berdasarkan radio yang dipilih) */
+    #slide-1:checked ~ .carousel-container { transform: translateX(0%); }
+    #slide-2:checked ~ .carousel-container { transform: translateX(-25%); }
+    #slide-3:checked ~ .carousel-container { transform: translateX(-50%); }
+    #slide-4:checked ~ .carousel-container { transform: translateX(-75%); }
+
+    /* Gaya Navigasi Dots */
+    .navigation-dots { position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%); display: flex; gap: 10px; }
+    .dot { cursor: pointer; height: 12px; width: 12px; background-color: #E57373; border-radius: 50%; display: block; transition: background-color 0.3s; }
+
+    /* Menandai dot aktif sesuai radio yang terpilih */
+    #slide-1:checked ~ .navigation-dots .dot:nth-child(1),
+    #slide-2:checked ~ .navigation-dots .dot:nth-child(2),
+    #slide-3:checked ~ .navigation-dots .dot:nth-child(3),
+    #slide-4:checked ~ .navigation-dots .dot:nth-child(4) {
+      background-color: white; border: 2px solid #D32F2F;
     }
-    img.animate {
-      opacity: 0;
-      transform: translateY(30px);
-      transition: all 1s ease;
-    }
-    img.animate.show {
-      opacity: 1;
-      transform: translateY(0);
-      animation: fadeInUp 1.2s ease forwards;
-    }
-    img:hover {
-      transform: scale(1.07);
-      box-shadow: 0 0 20px gold;
-    }
-.carousel-wrapper {
-    position: relative;
-    max-width: 1000px;
-    margin: 40px auto;
-    overflow: hidden;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-}
-.carousel-wrapper input[type="radio"] {
-    display: none;
-}
-.carousel-container {
-    display: flex;
-    width: 400%; /* BERUBAH: Total 4 slide x 100% */
-    transition: transform 0.6s ease-in-out;
-}
-.slide {
-    width: 25%; /* BERUBAH: 100% dibagi 4 slide */
-    height: 400px;
-    position: relative;
-}
-.slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-.caption {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    color: white;
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
-}
-/* Logic Pergeseran Slide */
-#slide-2:checked ~ .carousel-container {
-    transform: translateX(-25%);
-}
-#slide-3:checked ~ .carousel-container {
-    transform: translateX(-50%);
-}
-#slide-4:checked ~ .carousel-container {
-    transform: translateX(-75%); /* LOGIKA BARU */
-}
-/* Gaya Navigasi Dots */
-.navigation-dots {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    gap: 10px;
-}
-.dot {
-    cursor: pointer;
-    height: 12px;
-    width: 12px;
-    background-color: #E57373;
-    border-radius: 50%;
-    display: block;
-    transition: background-color 0.3s;
-}
-/* Gaya Dot yang Aktif */
-#slide-1:checked ~ .navigation-dots .dot:nth-child(1),
-#slide-2:checked ~ .navigation-dots .dot:nth-child(2),
-#slide-3:checked ~ .navigation-dots .dot:nth-child(3),
-#slide-4:checked ~ .navigation-dots .dot:nth-child(4) { /* DOT KE-4 DITAMBAH */
-    background-color: white;
-    border: 2px solid #D32F2F;
-}
-.logo {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  animation: logoPulse 3s infinite ease-in-out;
-  box-shadow: 0 0 15px rgba(255,255,255,0.3);
-}
-/* Animasi lembut berdenyut */
-@keyframes logoPulse {
-  0% { transform: scale(1); box-shadow: 0 0 10px rgba(255,255,255,0.3); }
-  50% { transform: scale(1.1); box-shadow: 0 0 20px gold; }
-  100% { transform: scale(1); box-shadow: 0 0 10px rgba(255,255,255,0.3); }
-}
-/* ✨ Animasi teks di header (judul dan menu) */
-header h1, nav a {
-  position: relative;
-  animation: fadeText 2s ease forwards;
-  opacity: 0;
-}
-/* Urutan animasi untuk menu satu per satu */
-nav a:nth-child(1) { animation-delay: 0.3s; }
-nav a:nth-child(2) { animation-delay: 0.6s; }
-nav a:nth-child(3) { animation-delay: 0.9s; }
-nav a:nth-child(4) { animation-delay: 1.2s; }
-/* Efek berkilau halus saat hover */
-nav a::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: -3px;
-  width: 0%;
-  height: 2px;
-  background: gold;
-  transition: width 0.4s ease;
-}
-nav a:hover::after {
-  width: 100%;
-}
-/* Animasi masuk perlahan dari atas */
-@keyframes fadeText {
-  from {
-    transform: translateY(-15px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-</style>
+
+    .logo { width: 60px; height: 60px; border-radius: 50%; animation: logoPulse 3s infinite ease-in-out; box-shadow: 0 0 15px rgba(255,255,255,0.3); }
+    @keyframes logoPulse { 0% { transform: scale(1); box-shadow: 0 0 10px rgba(255,255,255,0.3); } 50% { transform: scale(1.1); box-shadow: 0 0 20px gold; } 100% { transform: scale(1); box-shadow: 0 0 10px rgba(255,255,255,0.3); } }
+    header h1, nav a { position: relative; animation: fadeText 2s ease forwards; opacity: 0; }
+    nav a:nth-child(1) { animation-delay: 0.3s; } nav a:nth-child(2) { animation-delay: 0.6s; } nav a:nth-child(3) { animation-delay: 0.9s; } nav a:nth-child(4) { animation-delay: 1.2s; }
+    nav a::after { content: ''; position: absolute; left: 0; bottom: -3px; width: 0%; height: 2px; background: gold; transition: width 0.4s ease; }
+    nav a:hover::after { width: 100%; }
+    @keyframes fadeText { from { transform: translateY(-15px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+  </style>
 </head>
 <body>
-  <header>
-  <div class="logo-box">
-    <img src="logo-sastik.jpg" alt="Logo SASTIK" class="logo animate-logo">
-  </div>
-  <h1>SASTIK</h1>
-  <nav>
-      <ul>
-        <li><a href="#beranda">Beranda</a></li>
-        <li><a href="#profil">Profil</a></li>
-        <li><a href="#tarian">Tarian</a></li>
-        <li><a href="#galeri">Galeri</a></li>
-      </ul>
-    </nav>
-  </header>
-  <section id="beranda" class="hero">
-    <div class="hero-text">
-      <h2>Sanggar Seni Tiga Kendari (SASTIK)</h2>
-      <p>Tempat kami menyalurkan cinta terhadap budaya dan tarian tradisional. Di SASTIK, menari bukan sekadar gerak, tetapi juga wujud rasa, makna, dan kebersamaan keluarga seni.</p>
-    </div>
-    <div class="tarian-card">
-      <img src="IMG-satu.jpg" alt="Penari tradisional SASTIK" class="animate">
-    </div>
-  </section>
-
-  <section id="profil" class="profil">
-    <h2 class="section-title">Profil Sanggar</h2>
-    <p class="section-sub">Menjaga dan melestarikan seni tari tradisional Kendari</p>
-    <div class="profil-content">
-      <img src="IMG-tiga.jpg" alt="Latihan tari di sanggar" class="animate">
-      <div>
-        <p>SASTIK (Sanggar Seni Tiga Kendari) didirikan dengan semangat untuk melestarikan budaya lokal melalui tari. Kami adalah keluarga besar penari muda yang berlatih, tampil, dan berbagi kebahagiaan lewat gerak dan irama.</p>
-        <p>Dengan pelatih berpengalaman dan anggota yang solid, kami telah tampil di berbagai acara budaya dan festival daerah. Kami percaya bahwa setiap gerakan memiliki cerita dan setiap tarian adalah warisan.</p>
+  <div class="container-lg px-3 my-5 markdown-body">
+    <header>
+      <div class="logo-box">
+        <img src="logo-sastik.jpg" alt="Logo SASTIK" class="logo animate-logo" />
+<p>logo-sastik.jpg</p>
       </div>
-    </div>
-  </section>
-
-  <section id="tarian" class="tarian">
-    <h2 class="section-title">Tarian Kami</h2>
-    <p class="section-sub">Karya tari yang pernah kami tampilkan</p>
-    <div class="tarian-list">
-      <div class="tarian-card">
-        <img src="sedow.png" alt="Tari Haluoleo" class="animate">
-        <h3>Haluoleo</h3>
-        <p>Tari penyambutan khas Sulawesi Tenggara yang menggambarkan kehangatan dan persaudaraan.</p>
+      <h1>SASTIK</h1>
+      <nav>
+        <ul>
+          <li><a href="#beranda">Beranda</a></li>
+          <li><a href="#profil">Profil</a></li>
+          <li><a href="#tarian">Tarian</a></li>
+          <li><a href="#galeri">Galeri</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="beranda" class="hero">
+      <div class="hero-text">
+        <h2>Sanggar Seni Tiga Kendari (SASTIK)</h2>
+        <p>Tempat kami menyalurkan cinta terhadap budaya dan tarian tradisional. Di SASTIK, menari bukan sekadar gerak, tetapi juga wujud rasa, makna, dan kebersamaan keluarga seni.</p>
       </div>
       <div class="tarian-card">
-        <img src="IMG-tameng.jpg" alt="Tari Amoara" class="animate">
-        <h3>Amoara & mondotambe</h3>
-        <p>Tarian kebanggaan SASTIK yang memadukan energi muda dan tradisi daerah dengan gaya elegan.</p>
+        <img src="IMG-satu.jpg" alt="Penari tradisional SASTIK" class="animate" />
+<p>IMG-satu.jpg</p>
       </div>
-      <div class="tarian-card">
-        <img src="IMG-toraja.jpg" alt="Tari 4 etnis" class="animate">
-        <h3>4 etnis</h3>
-        <p>Tari 4 Etnis adalah tarian kreasi yang berasal dari Sulawesi Selatan yang memadukan unsur-unsur dari empat etnis terbesar di wilayah tersebut: Bugis, Makassar, Mandar, dan Toraja..</p>
+    </section>
+    <section id="profil" class="profil">
+      <h2 class="section-title">Profil Sanggar</h2>
+      <p class="section-sub">Menjaga dan melestarikan seni tari tradisional Kendari</p>
+      <div class="profil-content">
+        <img src="IMG-tiga.jpg" alt="Latihan tari di sanggar" class="animate" />
+<p>IMG-tiga.jpg</p>
+        <div>
+          <p>SASTIK (Sanggar Seni Tiga Kendari) didirikan dengan semangat untuk melestarikan budaya lokal melalui tari. Kami adalah keluarga besar penari muda yang berlatih, tampil, dan berbagi kebahagiaan lewat gerak dan irama.</p>
+          <p>Dengan pelatih berpengalaman dan anggota yang solid, kami telah tampil di berbagai acara budaya dan festival daerah. Kami percaya bahwa setiap gerakan memiliki cerita dan setiap tarian adalah warisan.</p>
+        </div>
       </div>
-      <div class="tarian-card">
-        <img src="IMG-paduppa.jpg" alt="paduppa" class="animate">
-        <h3>paduppa</h3>
-        <p>Tari Paduppa adalah tarian tradisional dari suku Bugis-Makassar yang berfungsi sebagai tarian penyambutan tamu, sering disebut sebagai tarian selamat datang</p>
+    </section>
+    <section id="tarian" class="tarian">
+      <h2 class="section-title">Tarian Kami</h2>
+      <p class="section-sub">Karya tari yang pernah kami tampilkan</p>
+      <div class="tarian-list">
+        <div class="tarian-card">
+          <img src="sedow.png" alt="Tari Haluoleo" class="animate" />
+<p>sedow.png</p>
+          <h3>Haluoleo</h3>
+          <p>Tari penyambutan khas Sulawesi Tenggara yang menggambarkan kehangatan dan persaudaraan.</p>
+        </div>
+        <div class="tarian-card">
+          <img src="IMG-tameng.jpg" alt="Tari Amoara" class="animate" />
+<p>IMG-tameng.jpg</p>
+          <h3>Amoara &amp; mondotambe</h3>
+          <p>Tarian kebanggaan SASTIK yang memadukan energi muda dan tradisi daerah dengan gaya elegan.</p>
+        </div>
+        <div class="tarian-card">
+          <img src="IMG-toraja.jpg" alt="Tari 4 etnis" class="animate" />
+<p>IMG-toraja.jpg</p>
+          <h3>4 etnis</h3>
+          <p>Tari 4 Etnis adalah tarian kreasi yang berasal dari Sulawesi Selatan yang memadukan unsur-unsur dari empat etnis terbesar di wilayah tersebut: Bugis, Makassar, Mandar, dan Toraja.</p>
+        </div>
+        <div class="tarian-card">
+          <img src="IMG-paduppa.jpg" alt="paduppa" class="animate" />
+<p>IMG-paduppa.jpg</p>
+          <h3>paduppa</h3>
+          <p>Tari Paduppa adalah tarian tradisional dari suku Bugis-Makassar yang berfungsi sebagai tarian penyambutan tamu.</p>
+        </div>
       </div>
-    </div>
-  </section>
-  <div class="carousel-wrapper">
-    <input type="radio" name="slider" id="slide-1" checked>
-    <input type="radio" name="slider" id="slide-2">
-    <input type="radio" name="slider" id="slide-3">
-    <input type="radio" name="slider" id="slide-4"> <div class="carousel-container">
+    </section>
+    <div class="carousel-wrapper">
+      <input type="radio" name="slider" id="slide-1" checked />
+      <input type="radio" name="slider" id="slide-2" />
+      <input type="radio" name="slider" id="slide-3" />
+      <input type="radio" name="slider" id="slide-4" />
+      <div class="carousel-container">
         <div class="slide" id="s1">
-            <img src="hitam.jpg" alt="Slide 1 - Tarian Tradisional">
-            <div class="caption">SASTIK</div>
+          <img src="hitam.jpg" alt="Slide 1 - Tarian Tradisional" />
+<p>hitam.jpg</p>
+          <div class="caption">SASTIK</div>
         </div>
         <div class="slide" id="s2">
-            <img src="IMG-luloo5.jpg" alt="Slide 2 - Penari SASTIK">
-            <div class="caption">SASTIK</div>
+          <img src="IMG-luloo5.jpg" alt="Slide 2 - Penari SASTIK" />
+<p>IMG-luloo5.jpg</p>
+          <div class="caption">SASTIK</div>
         </div>
         <div class="slide" id="s3">
-            <img src="IMG-merah.jpg" alt="Slide 3 - Panggung Pertunjukan">
-            <div class="caption">SASTIK</div>
+          <img src="IMG-merah.jpg" alt="Slide 3 - Panggung Pertunjukan" />
+<p>IMG-merah.jpg</p>
+          <div class="caption">SASTIK</div>
         </div>
-        <div class="slide" id="s4"> <img src="IMG-sisi.jpg" alt="Slide 4 - Latihan Bersama">
-            <div class="caption">SASTIK</div>
+        <div class="slide" id="s4">
+          <img src="IMG-sisi.jpg" alt="Slide 4 - Latihan Bersama" />
+<p>IMG-sisi.jpg</p>
+          <div class="caption">SASTIK</div>
         </div>
+      </div>
+      <div class="navigation-dots">
+        <label for="slide-1" class="dot" aria-label="Slide 1"></label>
+        <label for="slide-2" class="dot" aria-label="Slide 2"></label>
+        <label for="slide-3" class="dot" aria-label="Slide 3"></label>
+        <label for="slide-4" class="dot" aria-label="Slide 4"></label>
+      </div>
     </div>
-    <div class="navigation-dots">
-        <label for="slide-1" class="dot"></label>
-        <label for="slide-2" class="dot"></label>
-        <label for="slide-3" class="dot"></label>
-        <label for="slide-4" class="dot"></label> </div>
+    <section id="video" class="video">
+      <h2 class="section-title">Nonton Video Kami</h2>
+      <p class="section-sub">Saksikan penampilan tarian kami secara langsung</p>
+      <div class="video-grid" style="display:flex;justify-content:center;flex-wrap:wrap;gap:2rem;">
+        <div style="flex:1;min-width:300px;max-width:372px;cursor:pointer;">
+          <img src="IMG-video.png" alt="Video Tari SASTIK" style="width:100%;border-radius:12px;box-shadow:0 0 15px rgba(255,215,0,0.5);transition:0.3s;" onclick="tontonVideo('5cQ68zCqpKw')" />
+<p>IMG-video.png</p>
+          <p class="section-sub">tarian 4 etnis sulawesi selatan yang di bawakan oleh smk n 3 kendari</p>
+        </div>
+      </div>
+      <div class="video-grid" style="display:flex;justify-content:center;flex-wrap:wrap;gap:2rem;">
+        <div style="flex:1;min-width:300px;max-width:373px;cursor:pointer;">
+          <img src="IMG-video.png" alt="Video Tari SASTIK" style="width:100%;border-radius:12px;box-shadow:0 0 15px rgba(255,215,0,0.5);transition:0.3s;" onclick="tontonVideo('5cQ68zCqpKw')" />
+<p>IMG-video.png</p>
+          <p class="section-sub">tarian haluoleo yang di bawakan oleh smk n 3 kendari</p>
+        </div>
+      </div>
+      <div class="video-grid" style="display:flex;justify-content:center;flex-wrap:wrap;gap:2rem;">
+        <div style="flex:1;min-width:300px;max-width:373px;cursor:pointer;">
+          <img src="IMG-video.png" alt="Video Tari SASTIK" style="width:100%;border-radius:12px;box-shadow:0 0 15px rgba(255,215,0,0.5);transition:0.3s;" onclick="tontonVideo('5cQ68zCqpKw')" />
+<p>IMG-video.png</p>
+          <p class="section-sub">tarian lulo tapis yang di bawakan oleh smk n 3 kendari</p>
+        </div>
+      </div>
+    </section>
+    <section id="galeri" class="galeri">
+      <h2 class="section-title">Galeri</h2>
+      <p class="section-sub">Potret kebersamaan dan penampilan kami</p>
+      <div class="galeri-grid">
+        <img src="IMG-ulta.jpg" alt="Penampilan tari" class="animate" />
+<p>IMG-ulta.jpg</p>
+        <img src="IMG-toraja.jpg" alt="Latihan tari" class="animate" />
+<p>IMG-toraja.jpg</p>
+        <img src="IMG-satu.jpg" alt="Kostum tari" class="animate" />
+<p>IMG-satu.jpg</p>
+        <img src="IMG-tiga.jpg" alt="Pertunjukan panggung" class="animate" />
+<p>IMG-tiga.jpg</p>
+        <img src="IMG-sisi.jpg" alt="sisi andriani" class="animate" />
+<p>IMG-sisi.jpg</p>
+        <img src="IMG-hotel.jpg" alt="sastik" class="animate" />
+<p>IMG-hotel.jpg</p>
+      </div>
+    </section>
+    <footer>
+      <p>© 2025 SASTIK - Sanggar Seni Tiga Kendari.</p>
+    </footer>
 
-<section id="video" class="video">
-  <h2 class="section-title">Nonton Video Kami</h2>
-  <p class="section-sub">Saksikan penampilan tarian kami secara langsung</p>
-  <div class="video-grid" style="display:flex;justify-content:center;flex-wrap:wrap;gap:2rem;">
-    <div style="flex:1;min-width:300px;max-width:372px;cursor:pointer;">
-      <img src="IMG-video.png" alt="Video Tari SASTIK" 
-           style="width:100%;border-radius:12px;box-shadow:0 0 15px rgba(255,215,0,0.5);transition:0.3s;" 
-           onclick="tontonVideo('5cQ68zCqpKw')">
-      <p class="section-sub">tarian 4 etnis sulawesi selatan yang di bawakan oleh smk n 3 kendari</p>
-    </div>
   </div>
 
-<div class="video-grid" style="display:flex;justify-content:center;flex-wrap:wrap;gap:2rem;">
-    <div style="flex:1;min-width:300px;max-width:373px;cursor:pointer;">
-      <img src="IMG-video.png" alt="Video Tari SASTIK" 
-           style="width:100%;border-radius:12px;box-shadow:0 0 15px rgba(255,215,0,0.5);transition:0.3s;" 
-           onclick="tontonVideo('5cQ68zCqpKw')">
-      <p class="section-sub">tarian haluoleo yang di bawakan oleh smk n 3 kendari</p>
-    </div>
-  </div>
-
-  <div class="video-grid" style="display:flex;justify-content:center;flex-wrap:wrap;gap:2rem;">
-    <div style="flex:1;min-width:300px;max-width:373px;cursor:pointer;">
-      <img src="IMG-video.png" alt="Video Tari SASTIK" 
-           style="width:100%;border-radius:12px;box-shadow:0 0 15px rgba(255,215,0,0.5);transition:0.3s;" 
-           onclick="tontonVideo('5cQ68zCqpKw')">
-      <p class="section-sub">tarian lulo tapis yang di bawakan oleh smk n 3 kendari</p>
-    </div>
-  </div>
-  
-<script>
-  function tontonVideo(id){
-    const popup = document.createElement('div');
-    popup.style.position = 'fixed';
-    popup.style.top = 0;
-    popup.style.left = 0;
-    popup.style.width = '100%';
-    popup.style.height = '100%';
-    popup.style.background = 'rgba(0,0,0,0.9)';
-    popup.style.display = 'flex';
-    popup.style.alignItems = 'center';
-    popup.style.justifyContent = 'center';
-    popup.style.zIndex = 9999;  
-    popup.style.cursor = 'pointer';
-    popup.innerHTML = `<iframe width="90%" height="80%" src="https://www.youtube.com/embed/${id}?autoplay=1" 
-      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
-    popup.addEventListener('click', (e)=>{
-      if(e.target === popup) popup.remove();  
-    });
-    document.body.appendChild(popup);
-  }
-</script>
-  
-  <section id="galeri" class="galeri">
-    <h2 class="section-title">Galeri</h2>
-    <p class="section-sub">Potret kebersamaan dan penampilan kami</p>
-    <div class="galeri-grid">
-      <img src="IMG-ulta.jpg" alt="Penampilan tari" class="animate">
-      <img src="IMG-toraja.jpg" alt="Latihan tari" class="animate">
-      <img src="IMG-satu.jpg" alt="Kostum tari" class="animate">
-      <img src="IMG-tiga.jpg" alt="Pertunjukan panggung" class="animate">
-      <img src="IMG-sisi.jpg" alt="sisi andriani" class="animate">
-      <img src="IMG-hotel.jpg" alt="sastik" class="animate">
-    </div>
-  </section>
-
-  <footer>
-    <p>© 2025 SASTIK - Sanggar Seni Tiga Kendari.</p>
-  </footer>
-
+  <!-- SCRIPTS -->
   <script>
-    function kirimPesan(e){
-      e.preventDefault();
-      const nama=document.getElementById('nama').value;
-      alert('Terima kasih '+nama+'! Pesan kamu sudah terkirim ke SASTIK.');
-      e.target.reset();
+    function tontonVideo(id){
+      const popup = document.createElement('div');
+      popup.style.position = 'fixed';
+      popup.style.top = 0;
+      popup.style.left = 0;
+      popup.style.width = '100%';
+      popup.style.height = '100%';
+      popup.style.background = 'rgba(0,0,0,0.9)';
+      popup.style.display = 'flex';
+      popup.style.alignItems = 'center';
+      popup.style.justifyContent = 'center';
+      popup.style.zIndex = 9999;
+      popup.style.cursor = 'pointer';
+      popup.innerHTML = `<iframe width="90%" height="80%" src="https://www.youtube.com/embed/${id}?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+      popup.addEventListener('click', (e)=>{
+        if(e.target === popup) popup.remove();
+      });
+      document.body.appendChild(popup);
     }
 
-    // 🔸 Efek animasi saat discroll
+    // efek anim saat discroll
     const animElements = document.querySelectorAll('img.animate');
     function animOnScroll(){
       animElements.forEach(el=>{
@@ -369,49 +293,43 @@ nav a:hover::after {
     }
     window.addEventListener('scroll', animOnScroll);
     animOnScroll();
+
+    // popup galeri
+    const imgs = document.querySelectorAll('.galeri-grid img');
+    imgs.forEach(img=>{
+      img.addEventListener('click',()=>{
+        const popup=document.createElement('div');
+        popup.style.position='fixed';
+        popup.style.top='0';popup.style.left='0';
+        popup.style.width='100%';popup.style.height='100%';
+        popup.style.background='rgba(0,0,0,0.9)';
+        popup.style.display='flex';popup.style.alignItems='center';popup.style.justifyContent='center';
+        popup.innerHTML=`<img src="${img.src}" style="max-width:90%;max-height:90%;border-radius:10px;">
+<p>${img.src}</p>`;
+        popup.onclick=()=>popup.remove();
+        document.body.appendChild(popup);
+      });
+    });
+
+    // canvas bintang
+    (function(){
+      const canvas=document.createElement('canvas');
+      canvas.id='bintang';
+      document.body.appendChild(canvas);
+      const ctx=canvas.getContext('2d');
+      function resize(){ canvas.width=innerWidth; canvas.height=innerHeight; }
+      window.addEventListener('resize', resize); resize();
+      const stars=[];
+      for(let i=0;i<100;i++){ stars.push({x:Math.random()*innerWidth,y:Math.random()*innerHeight,r:Math.random()*1.5});}
+      function draw(){ ctx.clearRect(0,0,canvas.width,canvas.height); ctx.fillStyle='white'; stars.forEach(s=>{ ctx.beginPath(); ctx.arc(s.x,s.y,s.r,0,Math.PI*2); ctx.fill(); }); }
+      function update(){ stars.forEach(s=>{ s.y+=0.2; if(s.y>innerHeight){s.y=0;s.x=Math.random()*innerWidth;} }); }
+      function animate(){ draw(); update(); requestAnimationFrame(animate); }
+      animate();
+    })();
   </script>
-  
-  <canvas id="bintang"></canvas>
-<script>
-const canvas=document.getElementById('bintang');
-const ctx=canvas.getContext('2d');
-canvas.width=innerWidth;canvas.height=innerHeight;
-const stars=[];
-for(let i=0;i<100;i++){stars.push({x:Math.random()*innerWidth,y:Math.random()*innerHeight,r:Math.random()*1.5});}
-function draw(){
-  ctx.clearRect(0,0,canvas.width,canvas.height);
-  ctx.fillStyle='white';
-  stars.forEach(s=>{
-    ctx.beginPath();
-    ctx.arc(s.x,s.y,s.r,0,Math.PI*2);
-    ctx.fill();
-  });
-}
-function update(){
-  stars.forEach(s=>{
-    s.y+=0.2;
-    if(s.y>innerHeight){s.y=0;s.x=Math.random()*innerWidth;}
-  });
-}
-function animate(){draw();update();requestAnimationFrame(animate);}
-animate();
-</script>
-  
-  <script>
-const imgs=document.querySelectorAll('.galeri-grid img');
-imgs.forEach(img=>{
-  img.addEventListener('click',()=>{
-    const popup=document.createElement('div');
-    popup.style.position='fixed';
-    popup.style.top='0';popup.style.left='0';
-    popup.style.width='100%';popup.style.height='100%';
-    popup.style.background='rgba(0,0,0,0.9)';
-    popup.style.display='flex';popup.style.alignItems='center';popup.style.justifyContent='center';
-    popup.innerHTML=`<img src="${img.src}" style="max-width:90%;max-height:90%;border-radius:10px;">`;
-    popup.onclick=()=>popup.remove();
-    document.body.appendChild(popup);
-  });
-});
-</script>
+
+  <!-- Anchor.js (kalau perlu) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
+  <script> if(window.anchors) anchors.add(); </script>
 </body>
 </html>
