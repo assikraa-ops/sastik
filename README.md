@@ -227,7 +227,6 @@
             *Anda bisa menambahkan jabatan lain (Sekretaris, Bendahara, dll.) dengan menyalin salah satu kotak di atas.
         </p>
     </div>
-</section>        
     <div class="carousel-wrapper">  
       <input type="radio" name="slider" id="slide-1" checked />  
       <input type="radio" name="slider" id="slide-2" />  
