@@ -193,9 +193,14 @@
           <h3>4 etnis</h3>  
           <p>Tari 4 Etnis adalah tarian kreasi yang berasal dari Sulawesi Selatan yang memadukan unsur-unsur dari empat etnis terbesar di wilayah tersebut: Bugis, Makassar, Mandar, dan Toraja.</p>  
         </div>  
-
-<section id="organisasi" class="organisasi">
-    <h2 class="section-title">Struktur Organisasi SASTIK</h2>
+        <div class="tarian-card">  
+          <img src="IMG-paduppa.jpg" alt="paduppa" class="animate" />  
+          <h3>paduppa</h3>  
+          <p>Tari Paduppa adalah tarian tradisional dari suku Bugis-Makassar yang berfungsi sebagai tarian penyambutan tamu.</p>  
+        </div>  
+      </div>  
+    </section>     
+        <h2 class="section-title">Struktur Organisasi SASTIK</h2>
     <p class="section-sub">Para pemimpin dan pembimbing Sanggar Seni Tiga Kendari</p>
     <div class="organisasi-grid">
         <div class="jabatan-card organisasi-pembina" style="width: 80%; margin-bottom: 2rem;">
@@ -223,13 +228,6 @@
         </p>
     </div>
 </section>        
-        <div class="tarian-card">  
-          <img src="IMG-paduppa.jpg" alt="paduppa" class="animate" />  
-          <h3>paduppa</h3>  
-          <p>Tari Paduppa adalah tarian tradisional dari suku Bugis-Makassar yang berfungsi sebagai tarian penyambutan tamu.</p>  
-        </div>  
-      </div>  
-    </section>     
     <div class="carousel-wrapper">  
       <input type="radio" name="slider" id="slide-1" checked />  
       <input type="radio" name="slider" id="slide-2" />  
