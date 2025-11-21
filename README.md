@@ -118,7 +118,7 @@
   <div class="container-lg px-3 my-5 markdown-body">
     <header>
       <div class="logo-box">
-        <img src="logo-sastik.jpg" alt="Logo SASTIK" class="logo animate-logo" />
+        <img src="sanggar seni.jpg" alt="Logo SASTIK" class="logo animate-logo" />
       </div>
       <h1>SASTIK</h1>
       <nav>
