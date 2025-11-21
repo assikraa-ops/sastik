@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="id">
 <head>
   <meta charset="utf-8" />
@@ -119,7 +119,6 @@
     <header>
       <div class="logo-box">
         <img src="logo-sastik.jpg" alt="Logo SASTIK" class="logo animate-logo" />
-<p>logo-sastik.jpg</p>
       </div>
       <h1>SASTIK</h1>
       <nav>
@@ -138,7 +137,6 @@
       </div>
       <div class="tarian-card">
         <img src="IMG-satu.jpg" alt="Penari tradisional SASTIK" class="animate" />
-<p>IMG-satu.jpg</p>
       </div>
     </section>
     <section id="profil" class="profil">
@@ -146,7 +144,6 @@
       <p class="section-sub">Menjaga dan melestarikan seni tari tradisional Kendari</p>
       <div class="profil-content">
         <img src="IMG-tiga.jpg" alt="Latihan tari di sanggar" class="animate" />
-<p>IMG-tiga.jpg</p>
         <div>
           <p>SASTIK (Sanggar Seni Tiga Kendari) didirikan dengan semangat untuk melestarikan budaya lokal melalui tari. Kami adalah keluarga besar penari muda yang berlatih, tampil, dan berbagi kebahagiaan lewat gerak dan irama.</p>
           <p>Dengan pelatih berpengalaman dan anggota yang solid, kami telah tampil di berbagai acara budaya dan festival daerah. Kami percaya bahwa setiap gerakan memiliki cerita dan setiap tarian adalah warisan.</p>
@@ -159,25 +156,21 @@
       <div class="tarian-list">
         <div class="tarian-card">
           <img src="sedow.png" alt="Tari Haluoleo" class="animate" />
-<p>sedow.png</p>
           <h3>Haluoleo</h3>
           <p>Tari penyambutan khas Sulawesi Tenggara yang menggambarkan kehangatan dan persaudaraan.</p>
         </div>
         <div class="tarian-card">
           <img src="IMG-tameng.jpg" alt="Tari Amoara" class="animate" />
-<p>IMG-tameng.jpg</p>
           <h3>Amoara &amp; mondotambe</h3>
           <p>Tarian kebanggaan SASTIK yang memadukan energi muda dan tradisi daerah dengan gaya elegan.</p>
         </div>
         <div class="tarian-card">
           <img src="IMG-toraja.jpg" alt="Tari 4 etnis" class="animate" />
-<p>IMG-toraja.jpg</p>
           <h3>4 etnis</h3>
           <p>Tari 4 Etnis adalah tarian kreasi yang berasal dari Sulawesi Selatan yang memadukan unsur-unsur dari empat etnis terbesar di wilayah tersebut: Bugis, Makassar, Mandar, dan Toraja.</p>
         </div>
         <div class="tarian-card">
           <img src="IMG-paduppa.jpg" alt="paduppa" class="animate" />
-<p>IMG-paduppa.jpg</p>
           <h3>paduppa</h3>
           <p>Tari Paduppa adalah tarian tradisional dari suku Bugis-Makassar yang berfungsi sebagai tarian penyambutan tamu.</p>
         </div>
@@ -206,22 +199,18 @@
       <div class="carousel-container">
         <div class="slide" id="s1">
           <img src="hitam.jpg" alt="Slide 1 - Tarian Tradisional" />
-<p>hitam.jpg</p>
           <div class="caption">SASTIK</div>
         </div>
         <div class="slide" id="s2">
           <img src="IMG-luloo5.jpg" alt="Slide 2 - Penari SASTIK" />
-<p>IMG-luloo5.jpg</p>
           <div class="caption">SASTIK</div>
         </div>
         <div class="slide" id="s3">
           <img src="IMG-merah.jpg" alt="Slide 3 - Panggung Pertunjukan" />
-<p>IMG-merah.jpg</p>
           <div class="caption">SASTIK</div>
         </div>
         <div class="slide" id="s4">
           <img src="IMG-sisi.jpg" alt="Slide 4 - Latihan Bersama" />
-<p>IMG-sisi.jpg</p>
           <div class="caption">SASTIK</div>
         </div>
       </div>
@@ -238,21 +227,18 @@
       <div class="video-grid" style="display:flex;justify-content:center;flex-wrap:wrap;gap:2rem;">
         <div style="flex:1;min-width:300px;max-width:372px;cursor:pointer;">
           <img src="IMG-video.png" alt="Video Tari SASTIK" style="width:100%;border-radius:12px;box-shadow:0 0 15px rgba(255,215,0,0.5);transition:0.3s;" onclick="tontonVideo('5cQ68zCqpKw')" />
-<p>IMG-video.png</p>
           <p class="section-sub">tarian 4 etnis sulawesi selatan yang di bawakan oleh smk n 3 kendari</p>
         </div>
       </div>
       <div class="video-grid" style="display:flex;justify-content:center;flex-wrap:wrap;gap:2rem;">
         <div style="flex:1;min-width:300px;max-width:373px;cursor:pointer;">
           <img src="IMG-video.png" alt="Video Tari SASTIK" style="width:100%;border-radius:12px;box-shadow:0 0 15px rgba(255,215,0,0.5);transition:0.3s;" onclick="tontonVideo('5cQ68zCqpKw')" />
-<p>IMG-video.png</p>
           <p class="section-sub">tarian haluoleo yang di bawakan oleh smk n 3 kendari</p>
         </div>
       </div>
       <div class="video-grid" style="display:flex;justify-content:center;flex-wrap:wrap;gap:2rem;">
         <div style="flex:1;min-width:300px;max-width:373px;cursor:pointer;">
           <img src="IMG-video.png" alt="Video Tari SASTIK" style="width:100%;border-radius:12px;box-shadow:0 0 15px rgba(255,215,0,0.5);transition:0.3s;" onclick="tontonVideo('5cQ68zCqpKw')" />
-<p>IMG-video.png</p>
           <p class="section-sub">tarian lulo tapis yang di bawakan oleh smk n 3 kendari</p>
         </div>
       </div>
@@ -262,17 +248,11 @@
       <p class="section-sub">Potret kebersamaan dan penampilan kami</p>
       <div class="galeri-grid">
         <img src="IMG-ulta.jpg" alt="Penampilan tari" class="animate" />
-<p>IMG-ulta.jpg</p>
         <img src="IMG-toraja.jpg" alt="Latihan tari" class="animate" />
-<p>IMG-toraja.jpg</p>
         <img src="IMG-satu.jpg" alt="Kostum tari" class="animate" />
-<p>IMG-satu.jpg</p>
         <img src="IMG-tiga.jpg" alt="Pertunjukan panggung" class="animate" />
-<p>IMG-tiga.jpg</p>
         <img src="IMG-sisi.jpg" alt="sisi andriani" class="animate" />
-<p>IMG-sisi.jpg</p>
         <img src="IMG-hotel.jpg" alt="sastik" class="animate" />
-<p>IMG-hotel.jpg</p>
       </div>
     </section>
 
@@ -324,7 +304,7 @@
       popup.style.justifyContent = 'center';
       popup.style.zIndex = 9999;
       popup.style.cursor = 'pointer';
-      popup.innerHTML = <iframe width="90%" height="80%" src="https://www.youtube.com/embed/${id}?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>;
+      popup.innerHTML = `<iframe width="90%" height="80%" src="https://www.youtube.com/embed/${id}?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
       popup.addEventListener('click', (e)=>{
         if(e.target === popup) popup.remove();
       });
@@ -354,8 +334,7 @@
         popup.style.width='100%';popup.style.height='100%';
         popup.style.background='rgba(0,0,0,0.9)';
         popup.style.display='flex';popup.style.alignItems='center';popup.style.justifyContent='center';
-        popup.innerHTML=`<img src="${img.src}" style="max-width:90%;max-height:90%;border-radius:10px;">
-<p>${img.src}</p>`;
+        popup.innerHTML=`<img src="${img.src}" style="max-width:90%;max-height:90%;border-radius:10px;">`;
         popup.onclick=()=>popup.remove();
         document.body.appendChild(popup);
       });
@@ -381,5 +360,5 @@
   <!-- Anchor.js (kalau perlu) -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
   <script> if(window.anchors) anchors.add(); </script>
-</b
-          
+</body>
+</html>          
