@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="id">
 <head>
   <meta charset="utf-8" />
@@ -116,7 +116,6 @@
 </head>
 <body>
   <div class="container-lg px-3 my-5 markdown-body">
-
     <header>
       <div class="logo-box">
         <img src="logo-sastik.jpg" alt="Logo SASTIK" class="logo animate-logo" />
@@ -132,7 +131,6 @@
         </ul>
       </nav>
     </header>
-
     <section id="beranda" class="hero">
       <div class="hero-text">
         <h2>Sanggar Seni Tiga Kendari (SASTIK)</h2>
@@ -143,7 +141,6 @@
 <p>IMG-satu.jpg</p>
       </div>
     </section>
-
     <section id="profil" class="profil">
       <h2 class="section-title">Profil Sanggar</h2>
       <p class="section-sub">Menjaga dan melestarikan seni tari tradisional Kendari</p>
@@ -156,7 +153,6 @@
         </div>
       </div>
     </section>
-
     <section id="tarian" class="tarian">
       <h2 class="section-title">Tarian Kami</h2>
       <p class="section-sub">Karya tari yang pernah kami tampilkan</p>
@@ -187,7 +183,6 @@
         </div>
       </div>
     </section>
-
     <!-- Struktur Organisasi -->
     <section id="struktur" class="struktur">
       <h2 class="section-title">Struktur Organisasi</h2>
@@ -201,7 +196,6 @@
         <div><strong>Bendahara:</strong>KAK INTAN</div>
       </div>
     </section>
-
     <!-- Carousel: input radio harus jadi sibling langsung dari container (telah diperbaiki) -->
     <div class="carousel-wrapper">
       <!-- radio harus berada di dalam wrapper dan menjadi sibling langsung dari .carousel-container dan .navigation-dots -->
@@ -209,7 +203,6 @@
       <input type="radio" name="slider" id="slide-2" />
       <input type="radio" name="slider" id="slide-3" />
       <input type="radio" name="slider" id="slide-4" />
-
       <div class="carousel-container">
         <div class="slide" id="s1">
           <img src="hitam.jpg" alt="Slide 1 - Tarian Tradisional" />
@@ -232,7 +225,6 @@
           <div class="caption">SASTIK</div>
         </div>
       </div>
-
       <div class="navigation-dots">
         <label for="slide-1" class="dot" aria-label="Slide 1"></label>
         <label for="slide-2" class="dot" aria-label="Slide 2"></label>
@@ -240,7 +232,6 @@
         <label for="slide-4" class="dot" aria-label="Slide 4"></label>
       </div>
     </div>
-
     <section id="video" class="video">
       <h2 class="section-title">Nonton Video Kami</h2>
       <p class="section-sub">Saksikan penampilan tarian kami secara langsung</p>
@@ -251,7 +242,6 @@
           <p class="section-sub">tarian 4 etnis sulawesi selatan yang di bawakan oleh smk n 3 kendari</p>
         </div>
       </div>
-
       <div class="video-grid" style="display:flex;justify-content:center;flex-wrap:wrap;gap:2rem;">
         <div style="flex:1;min-width:300px;max-width:373px;cursor:pointer;">
           <img src="IMG-video.png" alt="Video Tari SASTIK" style="width:100%;border-radius:12px;box-shadow:0 0 15px rgba(255,215,0,0.5);transition:0.3s;" onclick="tontonVideo('5cQ68zCqpKw')" />
@@ -259,7 +249,6 @@
           <p class="section-sub">tarian haluoleo yang di bawakan oleh smk n 3 kendari</p>
         </div>
       </div>
-
       <div class="video-grid" style="display:flex;justify-content:center;flex-wrap:wrap;gap:2rem;">
         <div style="flex:1;min-width:300px;max-width:373px;cursor:pointer;">
           <img src="IMG-video.png" alt="Video Tari SASTIK" style="width:100%;border-radius:12px;box-shadow:0 0 15px rgba(255,215,0,0.5);transition:0.3s;" onclick="tontonVideo('5cQ68zCqpKw')" />
@@ -268,7 +257,6 @@
         </div>
       </div>
     </section>
-
     <section id="galeri" class="galeri">
       <h2 class="section-title">Galeri</h2>
       <p class="section-sub">Potret kebersamaan dan penampilan kami</p>
@@ -315,7 +303,6 @@
     ">
   </div>
 </section>
-
     <footer>
       <p>© 2025 SASTIK - Sanggar Seni Tiga Kendari.</p>
     </footer>
