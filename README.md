@@ -111,14 +111,13 @@
   100% { transform: rotateY(360deg); }
 }
 
-
   </style>
 </head>
 <body>
   <div class="container-lg px-3 my-5 markdown-body">
     <header>
       <div class="logo-box">
-        <img src="sanggar seni.jpg" alt="Logo SASTIK" class="logo animate-logo" />
+        <img src="sasti.jpg.png" alt="Logo SASTIK" class="logo animate-logo" />
       </div>
       <h1>SASTIK</h1>
       <nav>
@@ -137,6 +136,7 @@
       </div>
       <div class="tarian-card">
         <img src="IMG-satu.jpg" alt="Penari tradisional SASTIK" class="animate" />
+<p>IMG-satu.jpg</p>
       </div>
     </section>
     <section id="profil" class="profil">
@@ -144,6 +144,7 @@
       <p class="section-sub">Menjaga dan melestarikan seni tari tradisional Kendari</p>
       <div class="profil-content">
         <img src="IMG-tiga.jpg" alt="Latihan tari di sanggar" class="animate" />
+<p>IMG-tiga.jpg</p>
         <div>
           <p>SASTIK (Sanggar Seni Tiga Kendari) didirikan dengan semangat untuk melestarikan budaya lokal melalui tari. Kami adalah keluarga besar penari muda yang berlatih, tampil, dan berbagi kebahagiaan lewat gerak dan irama.</p>
           <p>Dengan pelatih berpengalaman dan anggota yang solid, kami telah tampil di berbagai acara budaya dan festival daerah. Kami percaya bahwa setiap gerakan memiliki cerita dan setiap tarian adalah warisan.</p>
@@ -156,21 +157,25 @@
       <div class="tarian-list">
         <div class="tarian-card">
           <img src="sedow.png" alt="Tari Haluoleo" class="animate" />
+<p>sedow.png</p>
           <h3>Haluoleo</h3>
           <p>Tari penyambutan khas Sulawesi Tenggara yang menggambarkan kehangatan dan persaudaraan.</p>
         </div>
         <div class="tarian-card">
           <img src="IMG-tameng.jpg" alt="Tari Amoara" class="animate" />
+<p>IMG-tameng.jpg</p>
           <h3>Amoara &amp; mondotambe</h3>
           <p>Tarian kebanggaan SASTIK yang memadukan energi muda dan tradisi daerah dengan gaya elegan.</p>
         </div>
         <div class="tarian-card">
           <img src="IMG-toraja.jpg" alt="Tari 4 etnis" class="animate" />
+<p>IMG-toraja.jpg</p>
           <h3>4 etnis</h3>
           <p>Tari 4 Etnis adalah tarian kreasi yang berasal dari Sulawesi Selatan yang memadukan unsur-unsur dari empat etnis terbesar di wilayah tersebut: Bugis, Makassar, Mandar, dan Toraja.</p>
         </div>
         <div class="tarian-card">
           <img src="IMG-paduppa.jpg" alt="paduppa" class="animate" />
+<p>IMG-paduppa.jpg</p>
           <h3>paduppa</h3>
           <p>Tari Paduppa adalah tarian tradisional dari suku Bugis-Makassar yang berfungsi sebagai tarian penyambutan tamu.</p>
         </div>
@@ -199,18 +204,22 @@
       <div class="carousel-container">
         <div class="slide" id="s1">
           <img src="hitam.jpg" alt="Slide 1 - Tarian Tradisional" />
+<p>hitam.jpg</p>
           <div class="caption">SASTIK</div>
         </div>
         <div class="slide" id="s2">
           <img src="IMG-luloo5.jpg" alt="Slide 2 - Penari SASTIK" />
+<p>IMG-luloo5.jpg</p>
           <div class="caption">SASTIK</div>
         </div>
         <div class="slide" id="s3">
           <img src="IMG-merah.jpg" alt="Slide 3 - Panggung Pertunjukan" />
+<p>IMG-merah.jpg</p>
           <div class="caption">SASTIK</div>
         </div>
         <div class="slide" id="s4">
           <img src="IMG-sisi.jpg" alt="Slide 4 - Latihan Bersama" />
+<p>IMG-sisi.jpg</p>
           <div class="caption">SASTIK</div>
         </div>
       </div>
@@ -227,18 +236,21 @@
       <div class="video-grid" style="display:flex;justify-content:center;flex-wrap:wrap;gap:2rem;">
         <div style="flex:1;min-width:300px;max-width:372px;cursor:pointer;">
           <img src="IMG-video.png" alt="Video Tari SASTIK" style="width:100%;border-radius:12px;box-shadow:0 0 15px rgba(255,215,0,0.5);transition:0.3s;" onclick="tontonVideo('5cQ68zCqpKw')" />
+<p>IMG-video.png</p>
           <p class="section-sub">tarian 4 etnis sulawesi selatan yang di bawakan oleh smk n 3 kendari</p>
         </div>
       </div>
       <div class="video-grid" style="display:flex;justify-content:center;flex-wrap:wrap;gap:2rem;">
         <div style="flex:1;min-width:300px;max-width:373px;cursor:pointer;">
           <img src="IMG-video.png" alt="Video Tari SASTIK" style="width:100%;border-radius:12px;box-shadow:0 0 15px rgba(255,215,0,0.5);transition:0.3s;" onclick="tontonVideo('5cQ68zCqpKw')" />
+<p>IMG-video.png</p>
           <p class="section-sub">tarian haluoleo yang di bawakan oleh smk n 3 kendari</p>
         </div>
       </div>
       <div class="video-grid" style="display:flex;justify-content:center;flex-wrap:wrap;gap:2rem;">
         <div style="flex:1;min-width:300px;max-width:373px;cursor:pointer;">
           <img src="IMG-video.png" alt="Video Tari SASTIK" style="width:100%;border-radius:12px;box-shadow:0 0 15px rgba(255,215,0,0.5);transition:0.3s;" onclick="tontonVideo('5cQ68zCqpKw')" />
+<p>IMG-video.png</p>
           <p class="section-sub">tarian lulo tapis yang di bawakan oleh smk n 3 kendari</p>
         </div>
       </div>
@@ -248,17 +260,23 @@
       <p class="section-sub">Potret kebersamaan dan penampilan kami</p>
       <div class="galeri-grid">
         <img src="IMG-ulta.jpg" alt="Penampilan tari" class="animate" />
+<p>IMG-ulta.jpg</p>
         <img src="IMG-toraja.jpg" alt="Latihan tari" class="animate" />
+<p>IMG-toraja.jpg</p>
         <img src="IMG-satu.jpg" alt="Kostum tari" class="animate" />
+<p>IMG-satu.jpg</p>
         <img src="IMG-tiga.jpg" alt="Pertunjukan panggung" class="animate" />
+<p>IMG-tiga.jpg</p>
         <img src="IMG-sisi.jpg" alt="sisi andriani" class="animate" />
+<p>IMG-sisi.jpg</p>
         <img src="IMG-hotel.jpg" alt="sastik" class="animate" />
+<p>IMG-hotel.jpg</p>
       </div>
     </section>
 
 <!-- Logo 3D di bawah galeri -->
 <section id="logo-3d" style="text-align:center; padding:3rem 0;">
-  <h2 class="section-title">Logo 3D SASTIK</h2>
+  <h2 class="section-title">Logo SASTIK</h2>
   <p class="section-sub">SASTIK</p>
 
   <div style="
@@ -272,7 +290,7 @@
     transform-style: preserve-3d;
     animation: putar3D 8s infinite linear;
   ">
-    <img src="logo-sastik.jpg" alt="Logo 3D SASTIK" style="
+    <img src="sasti.jpg.png" alt="Logo 3D SASTIK" style="
       width: 200px;
       height: 200px;
       border-radius: 50%;
@@ -291,8 +309,10 @@
 
   <!-- SCRIPTS -->
   <script>
+    // buka popup video
     function tontonVideo(id){
       const popup = document.createElement('div');
+      popup.setAttribute('role','dialog');
       popup.style.position = 'fixed';
       popup.style.top = 0;
       popup.style.left = 0;
@@ -304,14 +324,28 @@
       popup.style.justifyContent = 'center';
       popup.style.zIndex = 9999;
       popup.style.cursor = 'pointer';
-      popup.innerHTML = `<iframe width="90%" height="80%" src="https://www.youtube.com/embed/${id}?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+
+      // iframe must be inside a string/template literal
+      popup.innerHTML = `
+        <div style="width:90%; max-width:1100px; height:80%; max-height:700px;">
+          <iframe width="100%" height="100%"
+            src="https://youtu.be/5cQ68zCqpKw?si=LyEONFFSKV6JG-c7"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+      `;
+
+      // hanya tutup saat klik di area gelap (bukan iframe)
       popup.addEventListener('click', (e)=>{
         if(e.target === popup) popup.remove();
       });
+
       document.body.appendChild(popup);
     }
 
-    // efek anim saat discroll
+    // anim saat discroll (untuk img.animate)
     const animElements = document.querySelectorAll('img.animate');
     function animOnScroll(){
       animElements.forEach(el=>{
@@ -324,7 +358,7 @@
     window.addEventListener('scroll', animOnScroll);
     animOnScroll();
 
-    // popup galeri
+    // popup galeri (klik gambar untuk lihat besar)
     const imgs = document.querySelectorAll('.galeri-grid img');
     imgs.forEach(img=>{
       img.addEventListener('click',()=>{
@@ -334,31 +368,33 @@
         popup.style.width='100%';popup.style.height='100%';
         popup.style.background='rgba(0,0,0,0.9)';
         popup.style.display='flex';popup.style.alignItems='center';popup.style.justifyContent='center';
-        popup.innerHTML=`<img src="${img.src}" style="max-width:90%;max-height:90%;border-radius:10px;">`;
-        popup.onclick=()=>popup.remove();
+        popup.style.zIndex = 9998;
+        popup.style.cursor = 'pointer';
+        popup.innerHTML = `<img src="${img.src}" style="max-width:90%;max-height:90%;border-radius:10px;">`;
+        popup.addEventListener('click', ()=> popup.remove());
         document.body.appendChild(popup);
       });
     });
 
-    // canvas bintang
+    // CANVAS BINTANG (tidak mengganggu klik karena pointer-events:none)
     (function(){
-      const canvas=document.createElement('canvas');
-      canvas.id='bintang';
+      const canvas = document.createElement('canvas');
+      canvas.id = 'bintang';
+      canvas.style.position = 'fixed';
+      canvas.style.top = '0';
+      canvas.style.left = '0';
+      canvas.style.width = '100%';
+      canvas.style.height = '100%';
+      canvas.style.zIndex = '-1';
+      canvas.style.pointerEvents = 'none';
       document.body.appendChild(canvas);
-      const ctx=canvas.getContext('2d');
-      function resize(){ canvas.width=innerWidth; canvas.height=innerHeight; }
-      window.addEventListener('resize', resize); resize();
-      const stars=[];
-      for(let i=0;i<100;i++){ stars.push({x:Math.random()*innerWidth,y:Math.random()*innerHeight,r:Math.random()*1.5});}
-      function draw(){ ctx.clearRect(0,0,canvas.width,canvas.height); ctx.fillStyle='white'; stars.forEach(s=>{ ctx.beginPath(); ctx.arc(s.x,s.y,s.r,0,Math.PI*2); ctx.fill(); }); }
-      function update(){ stars.forEach(s=>{ s.y+=0.2; if(s.y>innerHeight){s.y=0;s.x=Math.random()*innerWidth;} }); }
-      function animate(){ draw(); update(); requestAnimationFrame(animate); }
-      animate();
-    })();
-  </script>
 
-  <!-- Anchor.js (kalau perlu) -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
-  <script> if(window.anchors) anchors.add(); </script>
-</body>
-</html>          
+      const ctx = canvas.getContext('2d');
+      let stars = [];
+
+      function resize(){
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+        // regenerate stars to fit new size
+        stars = [];
+           
