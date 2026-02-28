@@ -114,7 +114,7 @@
   </style>
 </head>
 <body>
-  <div class="container-lg px-3 my-5 markdown-body">
+  <div style="width:100%;margin:0;padding:0;">
     <header>
       <div class="logo-box">
         <img src="sasti.jpg.png" alt="Logo SASTIK" class="logo animate-logo" />
