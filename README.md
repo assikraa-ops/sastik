@@ -1,8 +1,48 @@
 
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>sastik | website</title>
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="sastik" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="website" />
+<meta property="og:description" content="website" />
+<link rel="canonical" href="https://assikraa-ops.github.io/sastik/" />
+<meta property="og:url" content="https://assikraa-ops.github.io/sastik/" />
+<meta property="og:site_name" content="sastik" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="sastik" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","description":"website","headline":"sastik","name":"sastik","url":"https://assikraa-ops.github.io/sastik/"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="stylesheet" href="/sastik/assets/css/style.css?v=6e94505d904553d0b49562a13292deb3dbf5f40d">
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/sastik/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+  </head>
+  <body>
+    <div class="container-lg px-3 my-5 markdown-body">
+      
 <html lang="id">
 <head>
   <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>SASTIK - Sanggar Seni Tiga Kendari</title>
   <meta name="description" content="Website resmi Sanggar Seni Tiga Kendari (SASTIK) – Sanggar seni tari tradisional dan modern dari Kendari." />
@@ -21,7 +61,7 @@
   </script>
 
   <!-- jika punya file css eksternal tetap bisa dipakai -->
-  <link rel="stylesheet" href="/sastik/assets/css/style.css?v=a9c3450857110ad44de46de247294a3e4e4d0113">
+  <link rel="stylesheet" href="/sastik/assets/css/style.css?v=a9c3450857110ad44de46de247294a3e4e4d0113" />
 
   <!-- ====== Style internal (dari kode awal) ====== -->
   <style>
@@ -114,7 +154,7 @@
   </style>
 </head>
 <body>
-  <div style="width:100%;margin:0;padding:0;">
+  <div class="container-lg px-3 my-5 markdown-body">
     <header>
       <div class="logo-box">
         <img src="sasti.jpg.png" alt="Logo SASTIK" class="logo animate-logo" />
@@ -197,7 +237,7 @@
     <!-- Carousel: input radio harus jadi sibling langsung dari container (telah diperbaiki) -->
     <div class="carousel-wrapper">
       <!-- radio harus berada di dalam wrapper dan menjadi sibling langsung dari .carousel-container dan .navigation-dots -->
-      <input type="radio" name="slider" id="slide-1" checked />
+      <input type="radio" name="slider" id="slide-1" checked="" />
       <input type="radio" name="slider" id="slide-2" />
       <input type="radio" name="slider" id="slide-3" />
       <input type="radio" name="slider" id="slide-4" />
@@ -298,7 +338,7 @@
         0 0 20px rgba(255,215,0,0.7),
         inset 0 0 15px rgba(255,255,255,0.5);
       transform: translateZ(30px);
-    ">
+    " />
   </div>
 </section>
     <footer>
@@ -398,3 +438,12 @@
         // regenerate stars to fit new size
         stars = [];
            
+</script></body></html>
+
+
+      
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
+    <script>anchors.add();</script>
+  </body>
+</html>
